@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/service_fragment" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="@string/bang_bang_service_hint"
+        android:textColor="@color/normal_text_color"
+        android:textSize="@dimen/large_font_size" />
+
+    <Button
+        android:id="@+id/main_service_phone_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/common_orange_round_bg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/bang_bang_service_phone"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large_font_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/line_width"
+                android:layout_weight="1"
+                android:background="@color/line_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/bang_bang_service_you_can"
+                android:textColor="@color/normal_text_color"
+                android:textSize="@dimen/middle_font_size" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/line_width"
+                android:layout_weight="1"
+                android:background="@color/line_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/main_service_look_combo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/bang_bang_service_look_for_combo"
+                android:textColor="@color/text_hint"
+                android:textSize="@dimen/middle_font_size" />
+
+            <TextView
+                android:id="@+id/main_service_look_treasure"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:text="@string/bang_bang_service_look_for_treasure"
+                android:textColor="@color/text_hint"
+                android:textSize="@dimen/middle_font_size" />
+
+            <TextView
+                android:id="@+id/main_service_look_order"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/bang_bang_service_look_for_order"
+                android:textColor="@color/text_hint"
+                android:textSize="@dimen/middle_font_size" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="right"
+        android:background="@drawable/common_bottom_line_layout">
+
+        <TextView
+            android:id="@+id/tuan_list_order_by_money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:paddingRight="19dp"
+            android:text="@string/tuan_main_list_by_money"
+            android:textColor="@color/text_hint"
+            android:textSize="@dimen/small_font_size" />
+
+        <TextView
+            android:id="@+id/tuan_list_order_by_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="19dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:text="@string/tuan_main_list_by_month"
+            android:textColor="@color/text_hint"
+            android:textSize="@dimen/small_font_size" />
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/tuan_main_list_id"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:smoothScrollbar="true" />
+</LinearLayout>

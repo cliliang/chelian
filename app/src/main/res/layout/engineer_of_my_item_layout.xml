@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:utils="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/common_top_bottom_line_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/engineer_of_my_max_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/engineer_of_my_order"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_hint"
+                android:textSize="@dimen/small_font_size" />
+
+            <TextView
+                android:id="@+id/engineer_of_my_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/small_font_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/engineer_top_view_margin_top"
+            android:orientation="horizontal">
+
+            <com.ceyu.carsteward.common.ui.views.CircleHeadImageView
+                android:id="@+id/engineer_of_my_head"
+                android:layout_width="@dimen/engineer_pay_head_view_width"
+                android:layout_height="@dimen/engineer_pay_head_view_width"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                utils:border_color="@color/line_color"
+                utils:border_width="1px" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/engineer_of_my_max_padding"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/engineer_of_my_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/normal_text_color"
+                        android:textSize="@dimen/normal_font_size" />
+
+                    <TextView
+                        android:id="@+id/engineer_of_my_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/engineer_arrow_margin_left"
+                        android:textColor="@color/text_hint"
+                        android:textSize="@dimen/middle_font_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/middle_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/engineer_like_brand" />
+
+                    <TextView
+                        android:id="@+id/engineer_of_my_brand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/engineer_arrow_margin_left"
+                        android:textColor="@color/text_hint"
+                        android:textSize="@dimen/middle_font_size" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/engineer_of_my_money_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/rmb"
+                    android:textColor="@color/orange" />
+
+                <TextView
+                    android:id="@+id/engineer_of_my_dollar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/engineer_of_my_money_icon"
+                    android:textColor="@color/orange"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="83dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/engineer_of_my_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_hint"
+                android:textSize="@dimen/small_font_size" />
+
+            <TextView
+                android:id="@+id/engineer_of_my_connect_long"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/engineer_arrow_margin_left"
+                android:textColor="@color/text_hint"
+                android:textSize="@dimen/small_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_button_height"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/engineer_of_my_comment_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/do_comment_of_my_engineer"
+                android:textColor="@color/normal_text_color"
+                android:textSize="@dimen/large_font_size"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/engineer_of_my_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/common_button_height"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/take_red_packet_button_bg"
+                android:enabled="false"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:text="@string/contact_engineer_now"
+                android:textColor="@drawable/take_red_packet_text_selector"
+                android:textSize="@dimen/normal_font_size" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

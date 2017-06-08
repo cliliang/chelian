@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="breakrules_carlist_headerview_imagediameter">40dp</dimen>
+    <dimen name="breakrules_carlist_headerview_iamgemargin">10dp</dimen>
+    <dimen name="breakrules_carlist_headerview_imagetotext">10dp</dimen>
+    <dimen name="breakrules_carlist_headerview_totalheight">80dp</dimen>
+    
+    <dimen name="breakrules_carlist_item_brandicon_radius">30dp</dimen>
+    <dimen name="breakrules_carlist_item_toside">30dp</dimen>
+    <dimen name="breakrules_carlist_item_texttoicon">15dp</dimen>
+
+
+
+</resources>

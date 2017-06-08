@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/normal_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/engineer_do_comment" />
+
+        <RatingBar
+            android:id="@+id/self_input_raking_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:numStars="5"
+            android:rating="1"
+            android:layout_marginLeft="10dp"
+            android:progressDrawable="@drawable/common_raking_bar_styoe"
+            android:stepSize="1" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/self_input_comment_text"
+        style="@style/normal_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/common_dash_line_cornor_radio"
+        android:gravity="start"
+        android:hint="@string/self_upload_comment_hint"
+        android:maxLength="1000"
+        android:minHeight="@dimen/record_imagepicker_editboxheight"
+        android:padding="10dp"
+        android:textColorHint="@color/text_hint" />
+
+</LinearLayout>

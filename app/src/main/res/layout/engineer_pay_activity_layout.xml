@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:utils="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/engineer_pay_scroll_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/engineer_pay_top_view_height"
+            android:layout_marginTop="@dimen/engineer_top_view_margin_top"
+            android:background="@drawable/common_top_bottom_line_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.ceyu.carsteward.common.ui.views.CircleHeadImageView
+                android:id="@+id/engineer_pay_head"
+                android:layout_width="@dimen/engineer_pay_head_view_width"
+                android:layout_height="@dimen/engineer_pay_head_view_width"
+                android:layout_marginLeft="@dimen/engineer_pay_head_margin_left"
+                utils:border_color="@color/line_color"
+                utils:border_width="1px" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/engineer_pay_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/normal_text_color"
+                    android:textSize="@dimen/large_font_size" />
+
+                <TextView
+                    style="@style/middle_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/engineer_like_brand" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HE"
+                        android:visibility="invisible"
+                        android:textSize="@dimen/large_font_size" />
+
+                    <TextView
+                        android:id="@+id/engineer_pay_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/engineer_arrow_margin_left"
+                        android:textColor="@color/text_hint"
+                        android:layout_gravity="bottom"
+                        android:textSize="@dimen/middle_font_size" />
+                </FrameLayout>
+
+
+                <TextView
+                    android:id="@+id/engineer_pay_brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/engineer_arrow_margin_left"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/text_hint"
+                    android:textSize="@dimen/middle_font_size" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_icon_right_margin_right">
+
+                <TextView
+                    android:id="@+id/engineer_pay_money_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/rmb"
+                    android:textColor="@color/orange" />
+
+                <TextView
+                    android:id="@+id/engineer_pay_dollar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/engineer_pay_money_icon"
+                    android:textColor="@color/orange"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/engineer_pay_bang_view_height"
+            android:layout_marginTop="@dimen/engineer_top_view_margin_top"
+            android:background="@drawable/common_top_bottom_line_bg"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/engineer_pay_head_margin_left">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/engineer_pay_via_text_margin"
+                android:text="@string/engineer_pay_via"
+                android:textColor="@color/text_hint"
+                android:textSize="@dimen/normal_font_size" />
+
+            <LinearLayout
+                android:id="@+id/engineer_pay_via_bang"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_coupon" />
+
+                <TextView
+                    style="@style/middle_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/engineer_pay_bang_have" />
+
+                <TextView
+                    android:id="@+id/engineer_pay_bang_money"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/middle_font_size" />
+
+                <CheckBox
+                    android:id="@+id/engineer_pay_bang_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/common_icon_right_margin_right"
+                    android:button="@drawable/engineer_pay_check_box_style" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/engineer_top_view_margin_top"
+            android:background="@drawable/common_top_bottom_line_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/engineer_pay_other_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/engineer_describe_margin_left"
+                android:paddingLeft="@dimen/engineer_pay_head_margin_left"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/small_font_size"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/engineer_pay_head_margin_left"
+                android:text="@string/engineer_other_pay"
+                android:textColor="@color/text_hint"
+                android:textSize="@dimen/middle_font_size" />
+
+            <LinearLayout
+                android:id="@+id/engineer_pay_via_wechat"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/engineer_pay_item_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/engineer_pay_head_margin_left"
+                android:paddingRight="@dimen/engineer_pay_head_margin_left">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_wechat" />
+
+                <TextView
+                    style="@style/middle_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/engineer_pay_via_wechat" />
+
+                <CheckBox
+                    android:id="@+id/engineer_pay_wechat_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/engineer_pay_check_box_style" />
+            </LinearLayout>
+
+            <include layout="@layout/common_horizontal_line" />
+
+            <LinearLayout
+                android:id="@+id/engineer_pay_via_alipay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/engineer_pay_item_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/engineer_pay_head_margin_left"
+                android:paddingRight="@dimen/engineer_pay_head_margin_left"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_alipay" />
+
+                <TextView
+                    style="@style/normal_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/engineer_pay_via_alipay" />
+
+                <CheckBox
+                    android:id="@+id/engineer_pay_alipay_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/engineer_pay_check_box_style" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/engineer_pay_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@drawable/take_red_packet_button_bg"
+            android:text="@string/engineer_pay_sure"
+            android:textColor="@drawable/take_red_packet_text_selector"
+            android:textSize="@dimen/large_font_size" />
+    </LinearLayout>
+
+
+</ScrollView>

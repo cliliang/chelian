@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--养车记录列表页-->
+    <string name="record_doupload">上传养车记录</string>
+    <string name="record_goodness">上传养车记录的好处</string>
+    <string name="record_goodness1">1 下次保养、维修时有参照标准（爱车的病例）</string>
+    <string name="record_goodness2">2 卖车时能卖高价</string>
+    <string name="record_goodness3">3 养车账单，不再糊里糊涂</string>
+
+    <string name="record_gotoupload">是否现在去上传？</string>
+    <!--上传页-->
+    <string name="record_mostthree">最多上传3张照片</string>
+    <string name="record_editrecord">写写养车记录吧&#8230;</string>
+    <string name="record_chooseimage">选择养车记录照片</string>
+    <string name="record_pickimagefale">选择图片失败，请重试。</string>
+    <string name="record_uploadimagefailed">上传图片失败，请稍后再试。</string>
+    <string name="record_handlingimage">正在处理图片，请稍候。</string>
+    <string name="record_handledimage">图片处理完毕。</string>
+    <string name="record_pleaseedit">请编辑养车记录内容。</string>
+    <string name="record_uploadsuccess">上传成功。</string>
+    <string name="record_upload_hint">养车记录内容</string>
+
+    <!--删除养车记录对话框 -->
+    <string name="record_deletedialog_title">删除记录</string>
+    <string name="record_deletedialog_content">删除本条养车记录？</string>
+
+    <string name="record_deletefailed">删除失败，请稍后再试。</string>
+
+
+    <!-- 展开收起 -->
+    <string name="record_expand">全文</string>
+    <string name="record_hide">收起</string>
+
+</resources>

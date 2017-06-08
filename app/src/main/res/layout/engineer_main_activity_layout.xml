@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.ceyu.carsteward.engineer.view.ChoiceEngineerView
+        android:id="@+id/user_choice_engineer_view_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_block_view_margin_top"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/line_width">
+
+        <TextView
+            android:id="@+id/user_choice_engineer_not_hint"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/engineer_list_item_height"
+            android:text="@string/find_none_engineer_info"
+            android:textColor="@color/text_hint"
+            android:gravity="center"
+            android:textSize="@dimen/normal_font_size"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/common_horizontal_line" />
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/show_choice_engineer_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:smoothScrollbar="true" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

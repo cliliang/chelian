@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/add_car_choice_brand_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparency"
+        android:divider="@null"/>
+
+    <LinearLayout
+        android:id="@+id/simple_item_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="@color/default_background"
+        android:layout_marginLeft="@dimen/engineer_choice_list1_width">
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_color"/>
+
+        <ExpandableListView
+            android:id="@+id/add_car_choice_model_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparency"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:background="@color/white"
+            android:listSelector="@null"/>
+    </LinearLayout>
+
+
+</FrameLayout>

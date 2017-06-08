@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/user_bang_service_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/normal_text_style"
+        android:lineSpacingMultiplier="1.5"
+        android:padding="@dimen/activity_horizontal_margin"/>
+
+</ScrollView>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="user_login">登录</string>
+    <string name="user_input_phone_number">请输入手机号码</string>
+    <string name="user_input_phone_code">请输入短信验证码</string>
+    <string name="user_get_phone_code">获取验证码</string>
+    <string name="user_send_phone_code_success">验证码已发送</string>
+    <string name="user_number_second">还剩%1$d秒</string>
+    <string name="add_car_hand_for">赶快添加您的爱车吧，体验优质服务</string>
+    <string name="user_login_read_detail">请先阅读用户协议</string>
+    <string name="user_add_car_title">恭喜您成功添加爱车!</string>
+    <string name="user_add_car_message">现在您可以快速体验优质的保养服务</string>
+    <string name="user_add_car_know">知道了</string>
+    <string name="user_add_car_go">立即保养</string>
+    <string name="qian_dao_yes">已签到</string>
+    <string name="qian_dao_no">每日签到</string>
+    <string name="qian_dao_success">签到成功 恭喜获得%1$d积分</string>
+    <string name="qian_dao_fail">签到失败</string>
+
+    <string name="user_need_help_form_engineer">找技师帮忙</string>
+    <string name="user_choice_brand">选择品牌</string>
+    <string name="user_choice_engineer">选择类型</string>
+    <string name="user_choice_local">选择地区</string>
+    <string name="engineer_local">所在地区</string>
+    <string name="engineer_function">技能专长</string>
+    <string name="engineer_service_year">服务年限</string>
+    <string name="engineer_service_brand_name">服务品牌</string>
+    <string name="engineer_service_year_string">%1$s年</string>
+    <string name="engineer_had_service_orders">%1$d单</string>
+    <string name="engineer_service_money_string">￥%1$.0f</string>
+    <string name="engineer_of_other_brand">其它品牌技师</string>
+    <string name="engineer_all_brand">全部品牌</string>
+    <string name="engineer_all_function">全部职能</string>
+    <string name="rmb">￥</string>
+    <string name="yuan">元</string>
+    <string name="engineer_like_brand">擅长品牌</string>
+    <string name="engineer_take_order">已咨询量</string>
+    <string name="engineer_function_content">技能专长</string>
+    <string name="all_choice">全选</string>
+    <string name="all_country">全国</string>
+    <string name="all_province">全省</string>
+    <string name="engineer_info_describe">技师简介</string>
+    <string name="engineer_operator_commit">从业资格证</string>
+    <string name="engineer_user_comment">用户评分:</string>
+    <string name="engineer_do_comment">评分:</string>
+    <string name="do_comment_for_engineer">给技师评价</string>
+    <string name="do_comment_of_my_engineer">我要评价</string>
+    <string name="engineer_input_comment_hint">请输入评价</string>
+    <string name="commit_user_comment">提交评论</string>
+    <string name="commit_comment_success">提交成功</string>
+    <string name="submit_choice_star">请给出评分</string>
+    <string name="submit_input_comment">请添加评论</string>
+    <string name="engineer_consult">立即咨询</string>
+    <string name="engineer_pay_now">立即支付</string>
+    <string name="engineer_comment_string">非常满意:%1$d 满意:%2$d 不满意:%3$d</string>
+    <string name="engineer_money_per">%1$.0f元/15分钟</string>
+    <string name="engineer_service_15">剩余15分钟</string>
+    <string name="engineer_service_time">已通话%1$d分%2$d秒</string>
+    <string name="engineer_of_my_connect_long">累计时长:%1$d分%2$d秒</string>
+    <string name="find_none_engineer_info">未找到技师信息</string>
+    <string name="engineer_pay_via">支付方式选择</string>
+    <string name="engineer_pay_bang_have">帮帮券  剩余：</string>
+    <string name="engineer_pay_lost">还差%1$.0f元，请选择其它支付方式</string>
+    <string name="engineer_other_pay">其它支付方式</string>
+    <string name="engineer_pay_via_wechat">微信支付</string>
+    <string name="engineer_pay_via_alipay">支付宝支付</string>
+    <string name="engineer_pay_sure">确认支付</string>
+    <string name="engineer_buy_service">购买服务</string>
+    <string name="weixin_pay_title">帮帮养车技师&#160;%1$s&#160;咨询费用</string>
+    <string name="weixin_pay_fail">支付失败</string>
+    <string name="weixin_pay_success">支付成功</string>
+    <string name="weixin_pay_success_result_content">是否立即开始咨询技师</string>
+    <string name="weixin_pay_success_notice">友情提示：</string>
+    <string name="weixin_pay_success_notice_content">本次购买通话时长15分钟，超出后系统自动挂断重新计费\n\n通话时长不足3分钟，可再次拨打，无需另支付费用\n\n支付成功48小时内可咨询，超时将自动退回到您的账户(代金券支付除外)</string>
+    <string name="contact_engineer_now">立即联系</string>
+    <string name="contact_engineer_return">再次咨询</string>
+    <string name="contact_engineer_later">稍后再说</string>
+    <string name="please_choice_red_packet">请先选择支付红包</string>
+    <string name="home_user_my_car">我的爱车</string>
+    <string name="home_user_my_red_packet">我的红包</string>
+    <string name="home_user_my_money">我的积分</string>
+    <string name="home_user_my_order">我的订单</string>
+    <string name="home_user_my_engineer">我的技师</string>
+    <string name="home_user_about_bang">关于帮帮</string>
+    <string name="home_user_exit_app">退出帮帮</string>
+    <string name="engineer_of_my">我的技师</string>
+    <string name="about_bang">关于帮帮</string>
+    <string name="exit">退出登陆</string>
+    <string name="kilo_unit">公里</string>
+    <string name="change_account">切换账号</string>
+    <string name="exit_current_user">退出当前账号</string>
+    <string name="exit_bang_now">立即退出</string>
+    <string name="bang_suggest_and_back">建议与反馈</string>
+    <string name="bang_connect_us">联系我们</string>
+    <string name="bang_service_list">服务协议</string>
+    <string name="engineer_order_number">订单号：%1$s</string>
+    <string name="engineer_online">值班技师</string>
+    <string name="engineer_service_finish">服务结束</string>
+    <string name="red_packet_use_describe">使用说明</string>
+    <string name="engineer_service_had_pay">已付费，未拨打</string>
+    <string name="late_3_minute_title">温馨提示</string>
+    <string name="late_3_minute_content">评价后本次咨询服务将结束</string>
+    <string name="engineer_service_dont_connect">已付费，未接通</string>
+    <string name="engineer_service_less_of_3">不足3分钟</string>
+    <string name="engineer_service_off_line">技师离线</string>
+    <string name="wait_for_engineer_title">温馨提示</string>
+    <string name="wait_for_engineer_content">正在接通中，请稍候！</string>
+    <string name="bang_connect_us_content">北京车联时空科技有限公司\n邮箱：che.lian@cheliantime.com\n网址：www.cheliantime.com\n客服：4006&#8211;900&#8211;977\n市场合作：marketing@cheliantime.com</string>
+    <string name="bang_version_content">版本 %1$s\n</string>
+    <string name="bang_version_power">CopyRight @2015帮帮养车 All Right Reserved</string>
+
+    <!-- 反馈建议 -->
+    <string name="bang_suggest_title">感谢您提出的宝贵意见，\n我们会随时保持与您的联系！</string>
+    <string name="bang_suggest_pleasesay">请提问!</string>
+    <string name="bang_suggest_atleastfivewords">至少输入5个字</string>
+    <string name="bang_suggest_submit">提交</string>
+    <string name="bang_suggest_contectbyphone">直接联系</string>
+    <string name="bang_service_phonenum_formatted">400&#8211;080&#8211;9296</string>
+    <string name="bang_service_phonenum">4000809296</string>
+    <string name="bang_service_phonenum_servicenumber">客服电话:</string>
+    <string name="bang_suggest_update_success">提交成功，感谢您的热心建议。</string>
+
+    <string name="bang_bang_service">帮帮客服</string>
+    <string name="bang_bang_service_hint">帮帮养车竭诚为您服务！</string>
+    <string name="bang_bang_service_phone">客服：400&#8211;080&#8211;9296</string>
+    <string name="bang_bang_service_you_can">您还可以</string>
+    <string name="bang_bang_service_look_for_combo">找保养套餐？</string>
+    <string name="bang_bang_service_look_for_treasure">预定快速保养？</string>
+    <string name="bang_bang_service_look_for_order">查询定单？</string>
+
+
+
+    <string name="engineer_bang_right_title">使用说明</string>
+    <string name="engineer_bang_dialog_title">技师帮帮使用说明</string>
+    <string name="engineer_bang_dialog_content">1.选择合适技师。\n2.支付相应金额，可拨打技师电话。\n3.付款后可与技师通话15分钟。\n4.通话时长不足3分钟，可再次免费拨打。\n5.未接通的，可再次免费拨打，直到接通为止。</string>
+    <string name="engineer_packet_use_rule">1.用于抵扣拨打技师电话费用；\n2.该券设有有效期2周，请在有效期内使用；\n3.为整张一次性消费，不设找零环节，请妥善使用。
+        \n\n活动最终解释权归帮帮养车所有</string>
+
+
+</resources>

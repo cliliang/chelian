@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@mipmap/bg_redbg"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_height="@dimen/red_packet_item_height"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/red_packet_money_margin_left"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="5dp"
+                android:text="￥"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/normal_font_size" />
+
+            <TextView
+                android:id="@+id/user_packet_money_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:textColor="@color/orange"
+                android:textSize="30sp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/red_packet_info_margin_left"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/normal_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/user_red_packet_use_date" />
+
+            <TextView
+                style="@style/normal_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/red_packet_date_margin"
+                android:layout_marginTop="@dimen/red_packet_date_margin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/user_red_packet_use_rule"
+                android:textColor="@color/text_hint"
+                android:textSize="@dimen/small_font_size" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/red_packet_date_margin"
+            android:src="@mipmap/icon_small_bag" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/self_manual_list_title"
+        android:paddingLeft="10dp"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/common_block_view_margin_top"
+        android:textSize="@dimen/normal_font_size"
+        android:textColor="@color/orange"
+        android:gravity="center_vertical"/>
+
+</LinearLayout>

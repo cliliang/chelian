@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true">
+        <shape>
+            <corners android:radius="@dimen/radio_border"/>
+            <solid android:color="@color/text_hint"/>
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="@dimen/radio_border"/>
+            <solid android:color="@color/text_hint"/>
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape>
+            <corners android:radius="@dimen/radio_border"/>
+            <solid android:color="@color/text_hint"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+            <corners android:radius="@dimen/radio_border"/>
+            <solid android:color="@color/text_hint"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="@dimen/radio_border"/>
+            <solid android:color="@color/orange"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--上传养车记录界面-->
+    <dimen name="record_goodness_title_verticalmargin">20dp</dimen>
+    <dimen name="record_goodness_content_verticalmargin">10dp</dimen>
+    <dimen name="record_uploadbutton_sidemargin">30dp</dimen>
+    <dimen name="record_imagepicker_heightwidth">75dp</dimen>
+    <dimen name="record_imagepicker_totop">30dp</dimen>
+    <dimen name="record_imagepicker_editboxheight">120dp</dimen>
+    <!--养车记录列表-->
+    <dimen name="record_listitem_contentverticalmargin">20dp</dimen>
+    <dimen name="record_listitem_sharetodelete">30dp</dimen>
+    <dimen name="record_listitem_location_to_date">15dp</dimen>
+    <dimen name="record_listitem_expand_height">25dp</dimen>
+    <dimen name="record_listitem_lineheight">16dp</dimen>
+
+</resources>

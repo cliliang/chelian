@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/default_background"
+    android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/show_simple_grid_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="0dp"
+        android:verticalSpacing="0dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="6"/>
+    
+    <LinearLayout
+        android:id="@+id/window_hide_layout_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingBottom="@dimen/start_red_margin_left"
+        android:paddingTop="@dimen/start_red_margin_left"
+        android:layout_alignBottom="@id/show_simple_grid_id"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hind_view"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/start_red_margin_left"
+            android:src="@mipmap/arraw_u"/>
+        
+    </LinearLayout>
+</RelativeLayout>

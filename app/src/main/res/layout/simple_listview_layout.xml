@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/engineer_line1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/line_color" />
+        <TextView
+            android:id="@+id/engineer_line2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/line_color" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/simple_item_text_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparency"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:listSelector="@color/transparency" />
+
+        <LinearLayout
+            android:id="@+id/simple_item_list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:background="@color/default_background"
+            android:layout_marginLeft="@dimen/engineer_choice_list1_width">
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/line_color"/>
+
+            <ListView
+                android:id="@+id/simple_item_list_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@color/transparency"
+                android:divider="@null"
+                android:scrollbars="none"
+                android:listSelector="@color/transparency"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

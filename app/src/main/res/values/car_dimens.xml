@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="car_facade_view_pager_height">65dp</dimen>
+    <dimen name="selector_car_icon_border">30dp</dimen>
+    <dimen name="add_kilometre_layout_width">100dp</dimen>
+    <dimen name="selector_car_view_margin">10dp</dimen>
+    <dimen name="add_car_brand_icon_broad">50dp</dimen>
+    <dimen name="add_car_mileage_item_height">49dp</dimen>
+    <dimen name="start_red_margin_left">12dp</dimen>
+    <dimen name="content_margin_left1">34dp</dimen>
+    <dimen name="content_margin_left2">24dp</dimen>
+    <dimen name="arraw_margin_left">7dp</dimen>
+    <dimen name="car_of_mine_list_item_height">78dp</dimen>
+    <dimen name="car_of_mine_icon_width">38dp</dimen>
+    <dimen name="car_of_mine_icon_margin_left">26dp</dimen>
+    <dimen name="add_new_car_button_margin_top">28dp</dimen>
+    <dimen name="home_banner_item_height">93dp</dimen>
+
+    <dimen name="self_view_margin_left">25dp</dimen>
+</resources>

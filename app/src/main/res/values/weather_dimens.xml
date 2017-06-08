@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="weather_limiet_to_logo_margin">20dp</dimen>
+    <dimen name="weather_weather_to_limit_margin">10dp</dimen>
+    <dimen name="weather_location_to_icon_margin">4dp</dimen>
+    <dimen name="weather_logo_width">80dp</dimen>
+    <dimen name="weather_logo_height">20dp</dimen>
+    <dimen name="weather_location_icon_height">18dp</dimen>
+</resources>

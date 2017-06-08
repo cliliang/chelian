@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/choice_time_title1"
+            style="@style/ChoiceTimeTitleStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_title_left_top_selector" />
+
+        <TextView
+            android:id="@+id/choice_time_title2"
+            style="@style/ChoiceTimeTitleStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_title_selector" />
+
+        <TextView
+            android:id="@+id/choice_time_title3"
+            style="@style/ChoiceTimeTitleStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_title_selector" />
+
+        <TextView
+            android:id="@+id/choice_time_title4"
+            style="@style/ChoiceTimeTitleStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_title_selector" />
+
+        <TextView
+            android:id="@+id/choice_time_title5"
+            style="@style/ChoiceTimeTitleStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_title_selector" />
+
+        <TextView
+            android:id="@+id/choice_time_title6"
+            style="@style/ChoiceTimeTitleStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_title_selector" />
+
+        <TextView
+            android:id="@+id/choice_time_title7"
+            style="@style/ChoiceTimeTitleStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_title_right_top_selector" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/choice_time_block1"
+            style="@style/ChoiceTimeContentStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_left_selector"/>
+        <TextView
+            android:id="@+id/choice_time_block2"
+            style="@style/ChoiceTimeContentStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_center_selector"/>
+        <TextView
+            android:id="@+id/choice_time_block3"
+            style="@style/ChoiceTimeContentStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_center_selector"/>
+        <TextView
+            android:id="@+id/choice_time_block4"
+            style="@style/ChoiceTimeContentStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_center_selector"/>
+        <TextView
+            android:id="@+id/choice_time_block5"
+            style="@style/ChoiceTimeContentStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_center_selector"/>
+        <TextView
+            android:id="@+id/choice_time_block6"
+            style="@style/ChoiceTimeContentStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_center_selector"/>
+        <TextView
+            android:id="@+id/choice_time_block7"
+            style="@style/ChoiceTimeContentStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_right_selector"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/choice_time_block8"
+            style="@style/ChoiceTimeContentStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_left_selector"/>
+        <TextView
+            android:id="@+id/choice_time_block9"
+            style="@style/ChoiceTimeContentStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_center_selector"/>
+        <TextView
+            android:id="@+id/choice_time_block10"
+            style="@style/ChoiceTimeContentStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_center_selector"/>
+        <TextView
+            android:id="@+id/choice_time_block11"
+            style="@style/ChoiceTimeContentStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_center_selector"/>
+        <TextView
+            android:id="@+id/choice_time_block12"
+            style="@style/ChoiceTimeContentStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_center_selector"/>
+        <TextView
+            android:id="@+id/choice_time_block13"
+            style="@style/ChoiceTimeContentStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_center_selector"/>
+        <TextView
+            android:id="@+id/choice_time_block14"
+            style="@style/ChoiceTimeContentStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_right_selector"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/choice_time_block15"
+            style="@style/ChoiceTimeContentStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_left_bottom_selector"/>
+        <TextView
+            android:id="@+id/choice_time_block16"
+            style="@style/ChoiceTimeContentStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_center_selector"/>
+        <TextView
+            android:id="@+id/choice_time_block17"
+            style="@style/ChoiceTimeContentStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_center_selector"/>
+        <TextView
+            android:id="@+id/choice_time_block18"
+            style="@style/ChoiceTimeContentStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_center_selector"/>
+        <TextView
+            android:id="@+id/choice_time_block19"
+            style="@style/ChoiceTimeContentStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_center_selector"/>
+        <TextView
+            android:id="@+id/choice_time_block20"
+            style="@style/ChoiceTimeContentStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_center_selector"/>
+        <TextView
+            android:id="@+id/choice_time_block21"
+            style="@style/ChoiceTimeContentStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/choice_time_view_right_bottom_selector"/>
+
+    </LinearLayout>
+
+</LinearLayout>

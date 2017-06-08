@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weather_carlimit">限行</string>
+    <string name="weather_choose_location">选择城市</string>
+    <string name="weather_choose_location_onlysupoortbj">当前版本只支持北京</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/common_block_view_margin_top"
+        android:background="@drawable/common_bottom_line_layout"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/middle_font_size"
+            android:text="@string/my_points_sum"/>
+        <TextView
+            android:id="@+id/points_main_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/middle_font_size" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/points_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparency"
+        android:divider="@null"/>
+
+</LinearLayout>

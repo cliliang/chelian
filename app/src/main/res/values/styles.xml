@@ -1,0 +1,216 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.ActionBarSlide" parent="@style/AppTheme">
+        <item name="android:windowAnimationStyle">@style/Animation.Slide</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/default_background</item>
+    </style>
+
+    <style name="Animation.Slide" parent="@style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+
+    <style name="Animation" />
+
+    <style name="SharePopupWindow" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="showPhoto" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="showPay" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="NormalDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:windowBackground">
+            @drawable/common_round_corner_button
+        </item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="popupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/share_popup_window_in</item>
+        <item name="android:windowExitAnimation">@anim/share_popup_window_out</item>
+    </style>
+
+    <style name="normal_text_style">
+        <item name="android:textColor">@color/normal_text_color</item>
+        <item name="android:textSize">@dimen/normal_font_size</item>
+    </style>
+    <style name="middle_text_style">
+        <item name="android:textColor">@color/normal_text_color</item>
+        <item name="android:textSize">@dimen/middle_font_size</item>
+    </style>
+    <style name="engineer_user_info_style1">
+        <item name="android:textColor">@color/normal_text_color</item>
+        <item name="android:textSize">@dimen/middle_font_size</item>
+        <item name="android:layout_marginTop">@dimen/engineer_list_item_beyond</item>
+    </style>
+    <style name="engineer_user_info_style2">
+        <item name="android:textColor">@color/text_hint</item>
+        <item name="android:textSize">@dimen/middle_font_size</item>
+        <item name="android:layout_marginTop">@dimen/engineer_list_item_beyond</item>
+    </style>
+
+    <declare-styleable name="RoundCornerImageView">
+        <attr name="borderColor" format="color" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="isround" format="boolean" />
+
+    </declare-styleable>
+
+    <style name="ProgressDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@color/transparency</item>
+    </style>
+
+    <style name="sideMargin">
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+    </style>
+    <style name="sidePadding">
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="orangeButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/take_red_packet_button_bg</item>
+        <item name="android:textColor">@drawable/take_red_packet_text_selector</item>
+        <item name="android:textSize">@dimen/large_font_size</item>
+    </style>
+    <style name="homeTextDrawable">
+        <item name="android:textColor">@color/normal_text_color</item>
+        <item name="android:textSize">@dimen/small_font_size</item>
+        <item name="android:drawablePadding">@dimen/user_home_text_drawable_margin</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="IconText">
+        <attr name="iconRes" format="reference" />
+        <attr name="textRes" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+
+    <style name="commonButtonStyle">
+        <item name="android:background">@drawable/take_red_packet_button_bg</item>
+        <item name="android:textColor">@drawable/take_red_packet_text_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/large_font_size</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="tribeWindow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/tribe_popup_item_height</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">@dimen/normal_font_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="TribeItemTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/small_font_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginLeft">3dp</item>
+    </style>
+    <style name="TribeCommentStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/middle_font_size</item>
+        <item name="android:textColor">@color/text_hint</item>
+        <item name="android:layout_marginLeft">3dp</item>
+    </style>
+    <style name="SelfRadioButtonStyle">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/self_radio_button_bg_selector</item>
+        <item name="android:textColor">@drawable/self_radio_button_text_color_selector</item>
+        <item name="android:textSize">@dimen/normal_font_size</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ChoiceTimeTitleStyle">
+        <item name="android:textSize">@dimen/middle_font_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/choice_time_title_text_selector</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="ChoiceTimeContentStyle">
+        <item name="android:textSize">@dimen/middle_font_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">@drawable/choice_time_content_text_selector</item>
+    </style>
+
+</resources>

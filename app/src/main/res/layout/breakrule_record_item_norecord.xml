@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/breakrules_carlist_headerview_totalheight">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/breakrules_recordlist_status_norecord"
+        android:textSize="@dimen/large_font_size"
+        android:textColor="@color/black"
+        />
+</FrameLayout>

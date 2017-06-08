@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/engineer_top_view_margin_top"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_horizontal_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/packet_facade_view_height"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/home_check_break_rules"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center">
+
+            <TextView
+                style="@style/normal_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/icon_color_myredbag"
+                android:drawablePadding="@dimen/home_facade_icon_padding_text"
+                android:gravity="center"
+                android:text="@string/check_break_rules" />
+
+        </LinearLayout>
+
+        <include layout="@layout/common_vertical_line" />
+
+        <LinearLayout
+            android:id="@+id/home_take_red_packet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                style="@style/normal_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/icon_color_myredbag"
+                android:drawablePadding="@dimen/home_facade_icon_padding_text"
+                android:gravity="center"
+                android:text="@string/check_my_red_packet" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/common_horizontal_line" />
+</LinearLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/self_order_root_view"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/reserve_order_top_view_height"
+                android:layout_marginTop="@dimen/common_block_view_margin_top"
+                android:background="@drawable/common_top_bottom_line_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/reserve_order_item_padding_left_right"
+                android:paddingRight="@dimen/reserve_order_item_padding_left_right">
+
+                <ImageView
+                    android:id="@+id/self_order_car_image"
+                    android:layout_width="@dimen/reserve_car_icon_width"
+                    android:layout_height="@dimen/reserve_car_icon_width"
+                    android:contentDescription="@android:string/cancel" />
+
+                <TextView
+                    android:id="@+id/self_order_car_model"
+                    style="@style/normal_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/reserve_pay_check_margin_right"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/self_order_car_plate"
+                    style="@style/normal_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_block_view_margin_top"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/reserve_order_item_padding_left_right">
+
+                    <TextView
+                        android:id="@+id/self_order_shop_name"
+                        style="@style/normal_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/self_order_shop_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/text_hint"
+                        android:textSize="@dimen/middle_font_size" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="@dimen/reserve_order_item_padding_left_right"
+                    android:text="保养项目"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/normal_font_size" />
+
+                <LinearLayout
+                    android:id="@+id/self_order_item_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/self_order_reserve_mechanic"
+                style="@style/normal_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/common_block_view_margin_top"
+                android:background="@drawable/common_bottom_line_layout"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/reserve_order_item_padding_left_right"
+                android:text="@string/self_reserve_mechanic" />
+
+            <TextView
+                android:id="@+id/self_order_reserve_time"
+                style="@style/normal_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/common_block_view_margin_top"
+                android:background="@drawable/common_bottom_line_layout"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/reserve_order_item_padding_left_right" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_block_view_margin_top"
+                android:background="@drawable/common_bottom_line_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/self_order_user_name"
+                    style="@style/normal_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/reserve_order_item_padding_left_right" />
+
+                <TextView
+                    android:id="@+id/self_order_user_phone"
+                    style="@style/normal_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/reserve_order_item_padding_left_right" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@drawable/common_top_bottom_line_bg"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/self_order_pay_money"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/orange"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:gravity="bottom"
+                android:text="@string/maintain_money_unit"
+                android:textColor="@color/orange" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/self_order_pay_button"
+            style="@style/commonButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:enabled="false"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

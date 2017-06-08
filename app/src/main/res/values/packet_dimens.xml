@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="packet_facade_view_height">67dp</dimen>
+    <dimen name="home_facade_icon_padding_text">10dp</dimen>
+    <dimen name="user_red_packet_title_margin_top">20dp</dimen>
+    <dimen name="red_packet_item_height">95dp</dimen>
+    <dimen name="red_packet_money_margin_left">22dp</dimen>
+    <dimen name="red_packet_info_margin_left">25dp</dimen>
+    <dimen name="red_packet_date_margin">6dp</dimen>
+    <dimen name="take_packet_content_padding_left_right">60dp</dimen>
+    <dimen name="take_packet_content_text_padding">10dp</dimen>
+    <dimen name="red_packet_of_mine_time_margin">15dp</dimen>
+    <dimen name="packet_red_item_money_width">100dp</dimen>
+
+
+    <dimen name="packet_red_item_money_size">35sp</dimen>
+</resources>

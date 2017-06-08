@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_block_view_margin_top"
+        android:background="@drawable/common_top_bottom_line_bg"
+        android:text="@string/tuan_facade_title"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/tuan_facade_title_margin_top_bottom"
+        android:paddingTop="@dimen/tuan_facade_title_margin_top_bottom"
+        android:textColor="@color/orange"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/normal_font_size"/>
+    <LinearLayout
+        android:id="@+id/bang_tuan_facade_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tuan_facade_more_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/tuan_facade_all_tuan"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="@color/white"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/middle_font_size"/>
+
+</LinearLayout>

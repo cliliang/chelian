@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:background="@drawable/common_bottom_line_layout">
+
+            <EditText
+                android:id="@+id/et_record_pickimage_editbox"
+                style="@style/normal_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/common_dash_line_cornor_radio"
+                android:gravity="start"
+                android:hint="@string/record_editrecord"
+                android:maxLength="1000"
+                android:minHeight="@dimen/record_imagepicker_editboxheight"
+                android:padding="10dp"
+                android:textColorHint="@color/text_hint" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/record_imagepicker_totop"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_record_pickimage_picker0"
+                        android:layout_width="@dimen/record_imagepicker_heightwidth"
+                        android:layout_height="@dimen/record_imagepicker_heightwidth"
+                        android:layout_gravity="left"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/icon_upload"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_record_pickimage_picker1"
+                        android:layout_width="@dimen/record_imagepicker_heightwidth"
+                        android:layout_height="@dimen/record_imagepicker_heightwidth"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/icon_upload" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_record_pickimage_picker2"
+                        android:layout_width="@dimen/record_imagepicker_heightwidth"
+                        android:layout_height="@dimen/record_imagepicker_heightwidth"
+                        android:layout_gravity="right"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/icon_upload" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/record_imagepicker_totop"
+                android:gravity="center_vertical"
+                android:text="@string/record_mostthree"
+                android:textColor="@color/text_hint"
+                android:textSize="@dimen/small_font_size" />
+
+        </LinearLayout>
+
+        <include layout="@layout/record_item_norecord" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tribe_action_bar_title">帮帮部落</string>
+    <string name="tribe_my_edit">我的发表</string>
+    <string name="tribe_my_comment">我的评论</string>
+    <string name="tribe_my_message">我的消息</string>
+    <string name="tribe_publish_hint">发表一下您的想法吧</string>
+    <string name="tribe_publish">发表</string>
+    <string name="tribe_choice_publish_image">选择图片</string>
+    <string name="tribe_publish_success">发表成功</string>
+    <string name="tribe_reply">回复</string>
+    <string name="tribe_comment_num">%1$d条评论</string>
+    <string name="tribe_comment_null">暂无评论</string>
+    <string name="tribe_comment_send">发送</string>
+    <string name="tribe_reply_moment">刚刚</string>
+    <string name="tribe_reply_default_hint">回复楼主：</string>
+    <string name="tribe_my_message_hint1">有人在</string>
+    <string name="tribe_my_message_hint2">中评论了你</string>
+</resources>

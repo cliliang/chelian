@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/engineer_pay_success_top_height"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_verygood_checked"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/large_font_size"
+            android:text="@string/weixin_pay_success"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/normal_text_style"
+        android:paddingBottom="@dimen/engineer_pay_success_top_margin_bottom"
+        android:gravity="top|left"
+        android:text="@string/weixin_pay_success_notice"/>
+
+    <TextView
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/engineer_small_height_bg"
+        android:textColor="@color/text_hint"
+        android:gravity="left"
+        android:text="@string/weixin_pay_success_notice_content"
+        android:lineSpacingMultiplier="1.5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/pay_success_later_button"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/common_button_height"
+            android:layout_weight="1"
+            android:background="@drawable/common_round_corner_button"
+            android:textColor="@color/normal_text_color"
+            android:textSize="@dimen/normal_font_size"
+            android:text="@string/contact_engineer_later"/>
+
+        <Button
+            android:id="@+id/pay_success_now_button"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/common_button_height"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@drawable/take_red_packet_button_bg"
+            android:textColor="@drawable/take_red_packet_text_selector"
+            android:textSize="@dimen/normal_font_size"
+            android:text="@string/contact_engineer_now"/>
+
+    </LinearLayout>
+
+</LinearLayout>

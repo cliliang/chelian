@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
+    xmlns:utils="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:layout_marginTop="@dimen/common_block_view_margin_top"
+            android:background="@drawable/common_bottom_line_layout"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <com.ceyu.carsteward.common.ui.views.RoundCornerImageView
+                android:id="@+id/user_home_head_image"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                utils:borderColor="@color/text_hint"
+                utils:cornerRadius="@dimen/radio_border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/user_home_name"
+                        style="@style/normal_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:paddingRight="10dp"
+                        android:text="13212345678" />
+
+                    <ImageView
+                        android:id="@+id/user_input_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:padding="5dp"
+                        android:src="@mipmap/input" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/user_qian_dao_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/qian_dao_button_selector"
+                    android:clickable="true"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="2dp"
+                    android:text="@string/qian_dao_yes"
+                    android:textColor="@drawable/qian_dao_button_text_color_selector"
+                    android:textSize="@dimen/middle_font_size" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_block_view_margin_top"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.ceyu.carsteward.common.views.IconTextView
+                android:id="@+id/user_home_my_car"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_fragment_item_height"
+                android:clickable="true"
+                tools:iconRes="@mipmap/icon_color_mycar"
+                tools:textRes="@string/home_user_my_car" />
+
+            <com.ceyu.carsteward.common.views.IconTextView
+                android:id="@+id/user_home_my_packet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_fragment_item_height"
+                android:clickable="true"
+                tools:iconRes="@mipmap/icon_color_myredbag"
+                tools:textRes="@string/home_user_my_red_packet" />
+
+            <com.ceyu.carsteward.common.views.IconTextView
+                android:id="@+id/user_home_my_money"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_fragment_item_height"
+                android:clickable="true"
+                tools:iconRes="@mipmap/icon_myinfo_point"
+                tools:textRes="@string/home_user_my_money" />
+
+            <com.ceyu.carsteward.common.views.IconTextView
+                android:id="@+id/user_home_my_order"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_fragment_item_height"
+                android:clickable="true"
+                tools:iconRes="@mipmap/icon_color_myaoder"
+                tools:textRes="@string/home_user_my_order" />
+
+            <com.ceyu.carsteward.common.views.IconTextView
+                android:id="@+id/user_home_my_engineer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_fragment_item_height"
+                android:clickable="true"
+                tools:iconRes="@mipmap/icon_color_myrepareier"
+                tools:textRes="@string/home_user_my_engineer" />
+
+            <com.ceyu.carsteward.common.views.IconTextView
+                android:id="@+id/user_home_about_bang"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_fragment_item_height"
+                android:clickable="true"
+                tools:iconRes="@mipmap/icon_color_about"
+                tools:textRes="@string/home_user_about_bang" />
+
+            <com.ceyu.carsteward.common.views.IconTextView
+                android:id="@+id/user_home_exit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_fragment_item_height"
+                android:clickable="true"
+                tools:iconRes="@mipmap/icon_exit"
+                tools:textRes="@string/home_user_exit_app" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

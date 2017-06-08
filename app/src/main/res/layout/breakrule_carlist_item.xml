@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin ="@dimen/breakrules_carlist_item_toside">
+        <ImageView
+            android:id="@+id/iv_breakrules_carlist_item_branicon"
+            android:layout_width="@dimen/breakrules_carlist_item_brandicon_radius"
+            android:layout_height="@dimen/breakrules_carlist_item_brandicon_radius"
+            android:src="@mipmap/loading"/>
+        <TextView
+            android:id="@+id/tv_breakrules_carlist_item_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/normal_font_size"
+            android:text="brand"
+            android:layout_toRightOf="@+id/iv_breakrules_carlist_item_branicon"
+            android:layout_marginLeft="@dimen/breakrules_carlist_item_texttoicon"
+            />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/tv_breakrules_carlist_item_brand"
+            android:layout_alignLeft="@+id/tv_breakrules_carlist_item_brand">
+            <TextView
+                android:id="@+id/tv_breakrules_carlist_item_bottomtv0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/normal_font_size"
+                android:text="@string/breakrules_please_add_carinfo"
+                android:layout_marginTop="@dimen/breakrules_carlist_item_texttoicon"
+                android:textColor="@color/orange"
+                android:layout_gravity="left"
+                />
+            <TextView
+                android:id="@+id/tv_breakrules_carlist_item_bottomtv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/normal_font_size"
+                android:text="扣分数0"
+                android:layout_marginTop="@dimen/breakrules_carlist_item_texttoicon"
+                android:textColor="@color/orange"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/tv_breakrules_carlist_item_bottomtv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/normal_font_size"
+                android:text="罚款数0"
+                android:layout_marginTop="@dimen/breakrules_carlist_item_texttoicon"
+                android:textColor="@color/orange"
+                android:layout_gravity="right"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_breakrules_carlist_item_carnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/normal_font_size"
+            android:text="京A0000"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

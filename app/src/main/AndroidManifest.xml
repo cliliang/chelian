@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ceyu.carsteward">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name=".app.AppContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".main.ui.FlashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Base.Theme.AppCompat">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5562e2cd67e58eb4a7004bf4" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="3e57783315be0e439b7e33112a88f6e5" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" />
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".main.ui.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".main.guard.GuardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".user.main.UserLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".engineer.main.EngineerMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".engineer.main.EngineerInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".packet.main.TakeRedPacketActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".packet.main.MyRedPacketsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".engineer.main.EngineerPayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="wx8a7d39c5023ba8e8" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".engineer.main.EngineerPacketPayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".engineer.main.EngineerOfMyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".user.main.AboutBangActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".user.main.BangConnectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".user.main.BangServiceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".user.main.BangSuggestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".car.main.CarOfMineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".car.main.AddCarBrandActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".car.main.AddCarYearActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".car.main.AddCarDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".car.main.AddCarMileageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".car.main.ShowInsuranceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".engineer.main.EngineerCommentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".maintain.main.MaintainMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".maintain.main.MaintainShopListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".maintain.main.MaintainComboActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".maintain.main.ShopPhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".maintain.main.MaintainReserveActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".maintain.main.MaintainTakeCarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".maintain.main.ReservePaySuccessActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".maintain.main.MaintainOrderListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".maintain.main.MaintainOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+
+        <!-- 违章查询 -->
+        <activity
+            android:name=".breakrule.main.CarListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 违章记录列表 -->
+        <activity
+            android:name=".breakrule.main.BreakRulesListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!--养车记录-->
+        <activity
+            android:name=".record.main.RecordListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!--上传养车记录选择照片和编辑-->
+        <activity
+            android:name=".record.main.RecordUploadActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 我的积分假界面 -->
+        <activity
+            android:name=".points.main.PointStaticActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".tuan.main.TuanMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".tuan.main.TuanContentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".tuan.main.TuanReserveActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".tuan.main.TuanOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".maintain.main.ShopInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity
+            android:name=".tribe.ui.TribePublishActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".tribe.ui.TribeMineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide" />
+        <activity android:name=".tribe.ui.TribeDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name=".self.ui.SelfMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide"/>
+        <activity android:name=".self.ui.SelfShopMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide"/>
+        <activity android:name=".self.ui.SelfMechanicActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide"/>
+        <activity android:name=".self.ui.SelfChoiceTimeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide"/>
+        <activity android:name=".self.ui.SelfOrderReserveActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name=".self.ui.SelfOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide"/>
+        <activity android:name=".self.ui.SelfCommentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide"/>
+        <activity android:name=".points.main.PointBuyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActionBarSlide"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="NvbquiGtp8U89PFNmO4CSR69" />
+
+        <!-- 监听通知点击或者忽略处理的广播 -->
+        <receiver
+            android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+            android:exported="false" />
+        <!-- 监听开机运行、网络连接变化、卸载的广播 -->
+        <receiver
+            android:name="com.umeng.message.SystemReceiver"
+            android:process=":push">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- 监听消息到达的广播 -->
+        <receiver
+            android:name="com.umeng.message.MessageReceiver"
+            android:exported="true"
+            android:process=":push">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <!-- 监听宿主选举的广播 -->
+        <receiver
+            android:name="com.umeng.message.ElectionReceiver"
+            android:exported="true"
+            android:process=":push">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.ELECTION_RESULT_V4" />
+                <category android:name="umeng" />
+            </intent-filter>
+        </receiver>
+        <!-- 监听注册的广播 -->
+        <!-- 【应用包名】字符串需要替换成本应用的应用包名 -->
+        <receiver
+            android:name="com.umeng.message.RegistrationReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.ceyu.carsteward.intent.action.COMMAND" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.UmengMessageBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!--可以根据需要自行设置 android:label 中的服务名 ：-->
+        <!-- Umeng的长连服务，用来建立推送的长连接的 -->
+        <!-- 【应用包名】字符串需要替换成本应用的应用包名 -->
+        <service
+            android:name="com.umeng.message.UmengService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":push">
+            <intent-filter>
+                <action android:name="com.ceyu.carsteward.intent.action.START" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ceyu.carsteward.intent.action.COCKROACH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.PING_V4" />
+                <category android:name="umeng" />
+            </intent-filter>
+        </service>
+
+        <!-- Umeng的消息接收服务 -->
+        <service
+            android:name="com.umeng.message.UmengIntentService"
+            android:process=":push" />
+
+        <!-- Umeng的消息路由服务 -->
+        <service
+            android:name="com.umeng.message.UmengMessageIntentReceiverService"
+            android:exported="true"
+            android:process=":push">
+            <intent-filter>
+                <action android:name="org.android.agoo.client.MessageReceiverService" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.android.agoo.client.ElectionReceiverService" />
+            </intent-filter>
+        </service>
+
+        <!-- v2.4.1添加的Service，Umeng的消息接收后的处理服务 -->
+        <service
+            android:name="com.umeng.message.UmengMessageCallbackHandlerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.umeng.messge.registercallback.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.unregistercallback.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.message.handler.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.autoupdate.handler.action" />
+            </intent-filter>
+        </service>
+
+        <!-- V1.3.0添加的service，负责下载通知的资源 -->
+        <service android:name="com.umeng.message.UmengDownloadResourceService" />
+    </application>
+
+</manifest>

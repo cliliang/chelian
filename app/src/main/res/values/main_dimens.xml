@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="home_block_layout_height">163dp</dimen>
+    <dimen name="home_block_view_height">60dp</dimen>
+    <dimen name="home_block_view_margin_top">17dp</dimen>
+</resources>

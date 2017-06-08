@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mileage_unit">%1$d公里</string>
+    <string name="maintain_title_kilo">公里数</string>
+    <string name="maintain_title_name">保养项目</string>
+    <string name="maintain_title_price">帮帮价</string>
+    <string name="maintain_shop_count_hint">商家数量：</string>
+    <string name="maintain_shop_count">%1$d家</string>
+    <string name="sort_shop_by_price">按价格</string>
+    <string name="sort_shop_by_distance">按距离</string>
+    <string name="pay_online">在线支付</string>
+    <string name="choice_maintain_shop">选择商家</string>
+    <string name="maintain_combo">保养套餐</string>
+    <string name="maintain_text_notify">保养提示</string>
+    <string name="maintain_must_optional_item">保养必选项</string>
+    <string name="maintain_optional_item">保养可选项</string>
+    <string name="maintain_content_kilo">保养内容（%1$d公里）</string>
+    <string name="maintain_check_out_shop">查看商家</string>
+    <string name="maintain_human_price">工时费</string>
+    <string name="maintain_free_count">（共%1$d项）</string>
+    <string name="maintain_reserve_maintain_content">保养内容</string>
+    <string name="maintain_combo_free_item">附赠免费项目</string>
+    <string name="maintain_order_free_count">附赠免费项目（共%1$d项）</string>
+    <string name="maintain_combo_must_know">预约须知</string>
+    <string name="maintain_combo_start_end">使用时间：</string>
+    <string name="maintain_combo_subscribe_info">预约信息：</string>
+    <string name="maintain_combo_order_notify">规则提醒：</string>
+    <string name="maintain_combo_bill_info">索取发票：</string>
+    <string name="maintain_combo_factory_price">官方指导价：￥%1$s</string>
+    <string name="maintain_combo_i_want_order">我要预订</string>
+    <string name="maintain_money_unit">元</string>
+    <string name="reserve_maintain_time">保养时间：</string>
+    <string name="reserve_maintain_license_number">保养车牌：</string>
+    <string name="reserve_maintain_use_name">姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名：</string>
+    <string name="reserve_maintain_use_phone">联系电话：</string>
+    <string name="reserve_maintain_input_name_hint">请输入姓名</string>
+    <string name="reserve_maintain_input_phone_hint">请输入手机号</string>
+    <string name="reserve_in_home_take_car">上门取车服务</string>
+    <string name="reserve_pay_via">支付方式：</string>
+    <string name="reserve_pay_notice1">未消费可退款</string>
+    <string name="reserve_pay_notice2">到店24小时前可改期</string>
+    <string name="reserve_time_over_17_30">预约到店时间不能晚于17：30</string>
+    <string name="pay_via_wechat">微信支付</string>
+    <string name="pay_via_alipay">支付宝支付</string>
+    <string name="pay_via_shop">到店支付</string>
+    <string name="choice_receive_shop_time">请选择到店的得时间</string>
+    <string name="reserve_detail_content">预订详情</string>
+    <string name="home_take_back_car">上门取送车</string>
+    <string name="reserve_take_car_serve_title">代驾服务说明</string>
+    <string name="please_choice_service_time">请先选择保养时间</string>
+    <string name="reserve_take_car_time">取车时间：</string>
+    <string name="reserve_take_car_address">取车地址：</string>
+    <string name="reserve_take_car_back_address">还车地址：</string>
+    <string name="reserve_return_car_same_take">还车同取车地址</string>
+    <string name="reserve_take_car_door_price">上门取送费用</string>
+    <string name="reserve_take_car_door_describe">专业技师帮您去保养，以免保养被忽悠</string>
+    <string name="reserve_take_door">我要上门</string>
+    <string name="please_choice_take_car_time">请选择取车时间</string>
+    <string name="please_input_take_car_address">请输入取车地址</string>
+    <string name="please_input_back_car_address">请输入还车地址</string>
+    <string name="please_input_you_name">请输入联系人</string>
+    <string name="please_input_phone_num">请输入联系方式</string>
+    <string name="please_input_order_time">请选择预约时间</string>
+    <string name="reserve_product_describe">帮帮养车汽车保养服务费用</string>
+    <string name="please_input_right_car_license">请填写正确的车牌号</string>
+    <string name="please_input_time_right">请选择合适时间</string>
+    <string name="reserve_pay_success">下单成功</string>
+    <string name="reserve_pay_success_title">您已成功下单！</string>
+    <string name="reserve_pay_success_info">感谢您对帮帮养车的支持，如有问题请致电客服。</string>
+    <string name="tuan_pay_success_info">如需修改到店时间，请到“我的订单”中修改</string>
+    <string name="reserve_pay_to_look_order">查看订单</string>
+    <string name="reserve_shop_list_empty">还在为您寻找最优质的商家</string>
+    <string name="reserve_pay_to_home">返回首页</string>
+    <string name="reserve_pay_with_ticket">代金券抵扣</string>
+    <string name="cancel_pay">已取消支付</string>
+    <string name="reserve_my_orders">我的订单</string>
+    <string name="pay_fail">支付失败</string>
+    <string name="reserve_order_time">预约时间：</string>
+    <string name="reserve_order_sn">订单号：%1$s</string>
+    <string name="reserve_order_maintain_content">保养内容</string>
+    <string name="reserve_order_take_car">服务费</string>
+    <string name="reserve_order_change_time">修改</string>
+    <string name="reserve_cancel_order">取消订单</string>
+    <string name="reserve_order_detail_content">订单详情</string>
+    <string name="reserve_with_packet_money">已抵扣%1$d元</string>
+    <string name="reserve_no_ticket">无</string>
+    <string name="reserve_no_use_ticket">未使用</string>
+    <string name="reserve_order_service_time">到店时间：</string>
+    <string name="reserve_order_take_time">取车时间：</string>
+    <string name="reserve_order_use_name">姓名：%1$s</string>
+    <string name="reserve_order_use_phone">手机号：%1$s</string>
+    <string name="reserve_order_take_address">取车：%1$s</string>
+    <string name="reserve_order_back_address">送车：%1$s</string>
+    <string name="reserve_order_take_car_time">取车时间：%1$s</string>
+    <string name="please_choice_take_car_time_title">请选择上门取车时间</string>
+    <string name="please_choice_shop_reserve_time">请选择到店时间</string>
+    <string name="please_order_change_time">选择时间</string>
+    <string name="reserve_order_time_notice">不能小于当前时间</string>
+    <string name="take_time_late_service_time">上门取车时间不能晚于到店时间1小时</string>
+    <string name="reserve_modify_time_fail">修改时间失败</string>
+    <string name="reserve_modify_time_success">修改成功</string>
+    <string name="cancel_order_success">订单取消成功</string>
+    <string name="take_car_agreement_title">代驾协议</string>
+    <string name="maintain_discount_count">优惠项目</string>
+    <string name="reserve_order_bottom_text">取消订单后客服会与您联系退款事宜</string>
+    <string name="maintain_take_car_content">1.根据您提供的交车人信息（包括但不限于姓名、联系电话等）核实身份，
+        您已充分明确并同意，如您所提供的信息与上门取送司机现场核实信息不符，上门取送司机有权拒绝向您提供上门取送保养
+        服务，由此产生的任何纠纷或损失的，均由您本人承担相应责任，与帮帮养车无关。\n2.您已确认，您在将您的爱车交给
+        上门取送司机之前，需要确认车内已无贵重物品，并做好与上门取送司机的登记手续且签字确认无误。\n3.您需确认您的
+        车辆已经具备如下三个必要条件：\na.车辆手续齐全；\nb.车况正常；\nc.有车辆保险（须包含交强险、车辆损失险、
+        第三者责任险）。\n您已知晓，如您的车辆不具备上述任一条件的，上门取送司机均有权拒绝向您提供服务，故请您在向上
+        门取送司机交付车辆时同时出示上述全部材料，否则由于您的隐瞒、虚报或类似行为导致任何纠纷或者损害的，均由您本
+        人承担相应责任，与帮帮养车无关。\n4.请您自行合理安排好您的爱车所预订的代驾时间，如您坚持由上门取送司机在
+        限行日（如有）提供服务的，则您应自行承担因违反此尾号限行导致的一切损失及责任。\n5.您已确认，您已经或者将要
+        将上门取送司机服务费用支付给帮帮养车，无需再向上门取送司机支付除代驾服务过程中必要的过路费、过桥费外的其他费用。\n6.您
+        已明确，如上门取送司机驾驶过程中遇交通事故等情况发生，则您同意先行使用您爱车的车辆保险进行相关理赔工作，并无条件配合
+        我们理赔工作进行。若因上门取送司机个人原因违章驾驶导致您的爱车被主管部门认定为承担主要责任的，车辆保险免赔部分有上
+        门取送司机承担。若代上门取送司机不承担事故主要责任的，则帮帮养车不承担赔偿责任。\n7.请您明确，代驾服务期间内确实查明
+        因上门取送司机个人原因造成您的爱车上财务丢失的，由帮帮养车负责赔偿。\n8.您已确认，帮帮养车保留上门取送保养服务的最终解释权。
+    </string>
+    <string name="maintain_combo_dialog_title">保养套餐内容介绍</string>
+    <string name="maintain_combo_dialog_content">矿物机油：\n矿物机油成本较低，其功效可满足发动机日常工作需要，对于发动机的清
+        洁性及修复性功效稍差，使用寿命较短。\n适用环境：\n在良好路况下行驶的车辆，如平坦不拥堵的路段。\n\n半合成机油：\n半合成机油
+        优于矿物机油。含有大量添加剂，在保证润滑功效的同时，清洁、修复等功能表现也不错，抗磨损能力更好，更省油。\n适用环境：\n1. 市区
+        内上下班用车。\n2. 能定期保养的车辆。\n\n全合成机油：\n全合成机油在生产过程中添加各种物质配方，以达到非常高的润滑
+        性、清洁性、修复性及高温流动性，更有效的保护。\n发动机，对环境的适应性更强，换油周期可以更长。\n适用环境：\n1. 经常跑长
+        途。\n2. 在严寒等恶劣条件下行驶。</string>
+    <string name="maintain_red_packet_rule">1.用于抵扣在线支付保养服务费用；\n2.该券设有有效期1个月，请在有效期内使用；\n3.为整张一次性消费，不设找零环节，请妥善使用；
+        \n4.该券不可与店内其他优惠活动同时使用。\n\n活动最终解释权归帮帮养车所有</string>
+    
+    <string name="shop_info">商家信息</string>
+    <string name="shop_info_describe">商家介绍</string>
+    <string name="shop_info_all_txt">全文</string>
+    <string name="shop_info_hidden_txt">收起</string>
+    <string name="shop_info_number_of_photo">共%1$d张</string>
+    <string name="shop_info_tuan_about">本店团购活动</string>
+    <string name="shop_info_different">商家特色</string>
+    <string name="shop_info_view_all_message">查看%1$d条评论</string>
+    <string name="shop_info_about_tuan">本店团购活动</string>
+</resources>

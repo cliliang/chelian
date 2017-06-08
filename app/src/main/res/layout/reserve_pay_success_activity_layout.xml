@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/reserve_pay_success_title_margin_top"
+        android:text="@string/reserve_pay_success_title"
+        android:textSize="20sp"
+        android:textColor="@color/orange"/>
+
+    <TextView
+        android:id="@+id/order_pay_success_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/reserve_pay_success_info"
+        android:textColor="@color/text_hint"
+        android:textSize="@dimen/normal_font_size"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="107dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp">
+        
+        <Button
+            android:id="@+id/reserve_pay_success_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/reserve_pay_to_look_order"
+            android:textSize="@dimen/normal_font_size"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/take_red_packet_button_bg"
+            android:textColor="@drawable/take_red_packet_text_selector"/>
+
+        <Button
+            android:id="@+id/reserve_pay_success_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/reserve_pay_to_home"
+            android:textSize="@dimen/normal_font_size"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@drawable/take_red_packet_button_bg"
+            android:textColor="@drawable/take_red_packet_text_selector"/>
+
+    </LinearLayout>
+
+</LinearLayout>

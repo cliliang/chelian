@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/maintain_group_child_item_min_height"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/maintain_combo_group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/middle_font_size"
+            android:textColor="@color/normal_text_color"
+            android:layout_marginLeft="@dimen/maintain_sub_item_margin_left"/>
+
+        <TextView
+            android:id="@+id/maintain_combo_group_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/text_hint"
+            android:textSize="@dimen/middle_font_size" />
+
+        <TextView
+            android:id="@+id/maintain_combo_group_price"
+            android:layout_width="@dimen/maintain_money_max_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/middle_font_size"
+            android:textColor="@color/text_hint" />
+
+        <ImageView
+            android:id="@+id/maintain_combo_group_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/maintain_arrow_margin_right"
+            android:src="@mipmap/arraw_d"/>
+
+    </LinearLayout>
+</LinearLayout>

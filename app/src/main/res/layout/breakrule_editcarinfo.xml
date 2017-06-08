@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/reset_car_year"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/add_car_mileage_item_height"
+                android:background="@drawable/common_bottom_line_layout"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    style="@style/normal_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/start_red_margin_left"
+                    android:text="@string/car_year" />
+
+                <TextView
+                    android:id="@+id/add_car_year_id"
+                    style="@style/normal_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/content_margin_left1" />
+
+                <ImageView
+                    android:id="@+id/add_car_year_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@android:string/cancel"
+                    android:src="@mipmap/arraw_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reset_car_model"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/add_car_mileage_item_height"
+                android:background="@drawable/common_bottom_line_layout"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    style="@style/normal_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/start_red_margin_left"
+                    android:text="@string/car_model" />
+
+                <TextView
+                    android:id="@+id/add_car_model_id"
+                    style="@style/normal_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/content_margin_left1" />
+
+                <ImageView
+                    android:id="@+id/add_car_model_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@android:string/cancel"
+                    android:src="@mipmap/arraw_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/add_car_mileage_item_height"
+                android:background="@drawable/common_bottom_line_layout"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    style="@style/normal_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/start_red_margin_left"
+                    android:text="@string/car_license_plate_number" />
+
+                <LinearLayout
+                    android:id="@+id/add_car_choice_local"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/add_car_choice_local_text"
+                        style="@style/normal_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/content_margin_left2"
+                        android:text="京" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/arraw_margin_left"
+                        android:src="@mipmap/arraw_d" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/add_car_choice_license"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/add_car_choice_license_text"
+                        style="@style/normal_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/content_margin_left2"
+                        android:text="A" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/arraw_margin_left"
+                        android:src="@mipmap/arraw_d" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/add_car_input_license"
+                    style="@style/normal_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/start_red_margin_left"
+                    android:layout_weight="1"
+                    android:maxLength="5"
+                    android:background="@null"
+                    android:inputType="textVisiblePassword"
+                    android:hint="@string/input_car_license_plate_number_hint"
+                    android:textColorHint="@color/text_hint" />
+
+            </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_car_mileage_item_height"
+                    android:background="@drawable/common_bottom_line_layout"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/activity_horizontal_margin">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red" />
+
+
+                    <TextView
+                        style="@style/normal_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/start_red_margin_left"
+                        android:text="@string/car_frame_number" />
+
+                    <EditText
+                        android:id="@+id/add_car_input_frame"
+                        style="@style/normal_text_style"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:maxLength="6"
+                        android:hint="@string/input_car_frame_number"
+                        android:inputType="textVisiblePassword"
+                        android:paddingLeft="@dimen/content_margin_left1"
+                        android:textColorHint="@color/text_hint" />
+
+                    <ImageView
+                        android:id="@+id/add_car_show_frame_demo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:src="@mipmap/qustion" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_car_mileage_item_height"
+                    android:background="@drawable/common_bottom_line_layout"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/activity_horizontal_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red" />
+
+                    <TextView
+                        style="@style/normal_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/start_red_margin_left"
+                        android:text="@string/car_engineer_number" />
+
+                    <EditText
+                        android:id="@+id/add_car_input_engineer"
+                        style="@style/normal_text_style"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/input_car_engineer_number"
+                        android:paddingLeft="@dimen/content_margin_left2"
+                        android:inputType="textVisiblePassword"
+                        android:textColorHint="@color/text_hint" />
+
+                    <ImageView
+                        android:id="@+id/add_car_show_engineer_demo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:contentDescription="@android:string/cancel"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:src="@mipmap/qustion" />
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/add_car_mileage_item_height"
+                android:background="@drawable/common_bottom_line_layout"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    style="@style/normal_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/start_red_margin_left"
+                    android:text="@string/breakrules_area" />
+
+                <EditText
+                    android:id="@+id/add_car_input_area"
+                    style="@style/normal_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/breakrules_area"
+                    android:paddingLeft="@dimen/content_margin_left2"
+                    android:inputType="textVisiblePassword"
+                    android:textColorHint="@color/text_hint" />
+
+            </LinearLayout>
+
+
+            </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

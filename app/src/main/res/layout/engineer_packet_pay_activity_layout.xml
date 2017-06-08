@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/engineer_packet_pay_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:scrollbars="none"
+        android:listSelector="@color/transparency"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"/>
+
+    <Button
+        android:id="@+id/engineer_packet_pay_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_button_height"
+        android:textColor="@drawable/take_red_packet_text_selector"
+        android:background="@drawable/take_red_packet_button_bg"
+        android:textSize="@dimen/normal_font_size"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="@string/engineer_pay_sure"/>
+</LinearLayout>

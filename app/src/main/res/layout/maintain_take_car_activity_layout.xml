@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_bottom_line_layout"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/maintain_common_text_margin_left"
+            android:paddingRight="@dimen/maintain_common_text_margin_left"
+            android:paddingTop="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reserve_maintain_time" />
+
+                <TextView
+                    android:id="@+id/take_car_maintain_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_hint"
+                    android:textSize="@dimen/normal_font_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/take_car_agreement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:text="@string/reserve_take_car_serve_title" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:src="@mipmap/icon_describe" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/take_car_time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/reserve_pay_item_height"
+            android:layout_marginTop="@dimen/reserve_layout_margin_top"
+            android:background="@drawable/common_top_bottom_line_bg"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/maintain_common_text_margin_left">
+
+            <TextView
+                style="@style/normal_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/reserve_take_car_time" />
+
+            <TextView
+                android:id="@+id/take_car_happen_time"
+                style="@style/normal_text_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:src="@mipmap/arraw_right" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/reserve_pay_item_height"
+            android:background="@drawable/common_bottom_line_layout"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/maintain_common_text_margin_left">
+
+            <TextView
+                style="@style/normal_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/reserve_take_car_address" />
+
+            <EditText
+                android:id="@+id/take_car_get_address"
+                style="@style/normal_text_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textColorHint="@color/text_hint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/back_car_address_same_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/reserve_pay_item_height"
+            android:layout_marginBottom="@dimen/reserve_layout_margin_top"
+            android:layout_marginTop="@dimen/reserve_layout_margin_top"
+            android:background="@drawable/common_top_bottom_line_bg"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/maintain_common_text_margin_left">
+
+            <CheckBox
+                android:id="@+id/take_back_same_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:button="@drawable/reserve_take_car_address_box"
+                android:checked="true" />
+
+            <TextView
+                style="@style/normal_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="@string/reserve_return_car_same_take" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/back_car_address_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/reserve_pay_item_height"
+            android:background="@drawable/common_top_bottom_line_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/maintain_common_text_margin_left"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/normal_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/reserve_take_car_back_address" />
+
+            <EditText
+                android:id="@+id/back_car_address_input"
+                style="@style/normal_text_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textColorHint="@color/text_hint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/reserve_car_info_item_height"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reserve_take_car_door_price"
+                android:textColor="@color/text_hint"
+                android:textSize="@dimen/middle_font_size" />
+
+            <TextView
+                android:id="@+id/take_car_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orange"
+                android:textSize="36sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/maintain_money_unit"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/normal_font_size" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:text="@string/reserve_take_car_door_describe"
+            android:textColor="@color/text_hint"
+            android:textSize="@dimen/middle_font_size" />
+
+        <Button
+            android:id="@+id/take_car_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/maintain_common_text_margin_left"
+            android:layout_marginRight="@dimen/maintain_common_text_margin_left"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/take_red_packet_button_bg"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:text="@string/confirm"
+            android:textSize="@dimen/normal_font_size"
+            android:textColor="@drawable/take_red_packet_text_selector" />
+    </LinearLayout>
+</ScrollView>

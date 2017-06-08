@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/tribe_action_more_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="16dp"
+            android:src="@mipmap/more" />
+
+        <TextView
+            android:id="@+id/tribe_action_more_dot"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignRight="@id/tribe_action_more_image"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="11dp"
+            android:visibility="gone"
+            android:background="@drawable/tribe_action_dot_bg" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tribe_action_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/large_font_size"
+        android:textColor="@color/normal_text_color"
+        android:text="@string/tribe_action_bar_title" />
+
+    <ImageView
+        android:id="@+id/tribe_action_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="16dp"
+        android:src="@mipmap/compile" />
+
+
+</LinearLayout>

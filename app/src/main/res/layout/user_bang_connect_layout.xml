@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/user_about_bang_logo_width"
+        android:layout_height="@dimen/user_about_bang_logo_width"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/user_about_bang_logo_margin_top"
+        android:layout_marginBottom="@dimen/user_about_bang_logo_margin_top"
+        android:src="@mipmap/icon_logo"/>
+
+    <include layout="@layout/common_horizontal_line"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/normal_text_style"
+        android:text="@string/bang_connect_us_content"
+        android:lineSpacingMultiplier="2"
+        android:padding="@dimen/online_bottom_text_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+
+    <TextView
+        android:id="@+id/bang_version_code"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="@style/normal_text_style"
+        android:gravity="center_horizontal|bottom"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/small_font_size"
+        android:textColor="@color/text_hint"
+        android:text="@string/bang_version_power"
+        android:gravity="bottom|center_horizontal"/>
+
+</LinearLayout>

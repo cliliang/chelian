@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tribe_my_message_id"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textSize="@dimen/middle_font_size"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:background="@drawable/common_bottom_line_layout"/>
+</LinearLayout>

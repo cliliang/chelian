@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/maintain_group_child_item_min_height"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_height="@dimen/maintain_group_child_item_min_height"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/maintain_choice_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/check_orange_normal"
+            android:layout_marginLeft="@dimen/maintain_max_item_margin_left"
+            android:paddingRight="6dp"
+            android:gravity="center_vertical"
+            android:button="@drawable/choice_maintain_combo_optinal_style"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/maintain_choice_container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="24dp"/>
+
+</LinearLayout>

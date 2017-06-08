@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="my_points_sum">我的积分：</string>
+    <string name="point_exchange">兑换</string>
+    <string name="point_good_name">商品信息：</string>
+    <string name="point_good_need">消耗积分：</string>
+    <string name="point_user_name">收货人姓名：</string>
+    <string name="point_user_name_hint">请输入收货人姓名</string>
+    <string name="point_user_phone">手机号码：</string>
+    <string name="point_user_phone_hint">请输入手机号</string>
+    <string name="point_user_youbian">邮编：</string>
+    <string name="point_user_youbian_hint">请输入邮编</string>
+    <string name="point_user_address">详细地址：</string>
+    <string name="point_user_address_hint">请输入详细地址</string>
+    <string name="point_number_jifen">%1$d 积分</string>
+    <string name="point_number_money">价格：%1$s</string>
+    <string name="point_after_submit_info">提交信息后客服会与您联系</string>
+    <string name="point_sure_submit">确认下单</string>
+    <string name="point_good_title">填写收货信息</string>
+    <string name="point_buy_success">商品兑换成功</string>
+
+</resources>

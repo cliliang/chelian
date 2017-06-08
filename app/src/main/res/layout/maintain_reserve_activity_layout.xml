@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reserve_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/maintain_reserve_top_layout_height"
+                    android:background="@drawable/common_bottom_line_layout"
+                    android:gravity="center_vertical|left"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/maintain_common_text_margin_left">
+
+                    <TextView
+                        android:id="@+id/reserve_shop_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/normal_text_color"
+                        android:textSize="@dimen/large_font_size" />
+
+                    <TextView
+                        android:id="@+id/reserve_shop_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/text_hint"
+                        android:textSize="@dimen/small_font_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/common_bottom_line_layout">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/maintain_common_text_margin_left"
+                        android:text="@string/maintain_must_optional_item"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/normal_font_size" />
+
+                    <LinearLayout
+                        android:id="@+id/reserve_maintain_item_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="30dp" />
+
+                    <TextView
+                        android:id="@+id/reserve_optional_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/maintain_common_text_margin_left"
+                        android:text="@string/maintain_optional_item"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/normal_font_size" />
+
+                    <LinearLayout
+                        android:id="@+id/reserve_optional_maintain_item_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/activity_horizontal_margin"
+                        android:paddingLeft="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/reserve_choice_time_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reserve_car_info_item_height"
+                    android:layout_marginTop="@dimen/reserve_layout_margin_top"
+                    android:background="@drawable/common_top_bottom_line_bg"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/normal_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/maintain_common_text_margin_left"
+                        android:gravity="center_vertical"
+                        android:text="@string/reserve_maintain_time" />
+
+                    <TextView
+                        android:id="@+id/reserve_choice_time_view"
+                        style="@style/normal_text_style"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/reserve_center1_margin_left" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/reserve_car_info_item_height"
+                        android:src="@mipmap/arraw_right" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reserve_car_info_item_height"
+                    android:background="@drawable/common_bottom_line_layout"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/normal_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/maintain_common_text_margin_left"
+                        android:gravity="center_vertical"
+                        android:text="@string/reserve_maintain_license_number" />
+
+                    <TextView
+                        android:id="@+id/reserve_license_local_view"
+                        style="@style/normal_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/reserve_center1_margin_left"
+                        android:paddingRight="@dimen/reserve_center_margin_left_right" />
+
+                    <ImageView
+                        android:id="@+id/reserve_show_choice_local"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:paddingLeft="@dimen/reserve_center_margin_left_right"
+                        android:paddingRight="@dimen/reserve_center_margin_left_right"
+                        android:src="@mipmap/arraw_d" />
+
+                    <TextView
+                        android:id="@+id/reserve_license_number_view"
+                        style="@style/normal_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/reserve_center_margin_left_right"
+                        android:paddingRight="@dimen/reserve_center_margin_left_right" />
+
+                    <ImageView
+                        android:id="@+id/reserve_show_choice_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:paddingLeft="@dimen/reserve_center_margin_left_right"
+                        android:paddingRight="@dimen/reserve_center_margin_left_right"
+                        android:src="@mipmap/arraw_d" />
+
+                    <EditText
+                        android:id="@+id/reserve_input_license_number"
+                        style="@style/normal_text_style"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:inputType="textVisiblePassword"
+                        android:paddingLeft="@dimen/reserve_center1_margin_left"
+                        android:textColorHint="@color/text_hint" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reserve_car_info_item_height"
+                    android:background="@drawable/common_bottom_line_layout"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/normal_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/maintain_common_text_margin_left"
+                        android:gravity="center_vertical"
+                        android:text="@string/reserve_maintain_use_name" />
+
+                    <EditText
+                        android:id="@+id/reserve_input_name_view"
+                        style="@style/normal_text_style"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="@string/reserve_maintain_input_name_hint"
+                        android:paddingLeft="@dimen/reserve_center1_margin_left"
+                        android:textColorHint="@color/text_hint" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reserve_car_info_item_height"
+                    android:background="@drawable/common_bottom_line_layout"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/normal_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/maintain_common_text_margin_left"
+                        android:gravity="center_vertical"
+                        android:text="@string/reserve_maintain_use_phone" />
+
+                    <EditText
+                        android:id="@+id/reserve_input_phone_view"
+                        style="@style/normal_text_style"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="@string/reserve_maintain_input_phone_hint"
+                        android:inputType="phone"
+                        android:paddingLeft="@dimen/reserve_center1_margin_left"
+                        android:textColorHint="@color/text_hint" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/reserve_home_take_car_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reserve_car_info_item_height"
+                    android:layout_marginTop="@dimen/reserve_layout_margin_top"
+                    android:background="@drawable/common_top_bottom_line_bg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/normal_text_style"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/maintain_common_text_margin_left"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/reserve_in_home_take_car" />
+
+                    <com.ceyu.carsteward.common.ui.views.SlideSwitch
+                        android:id="@+id/reserve_go_home_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/reserve_car_info_item_height" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/reserve_pay_with_ticket_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reserve_car_info_item_height"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:background="@drawable/common_top_bottom_line_bg"
+                    android:layout_marginTop="@dimen/reserve_layout_margin_top">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/maintain_common_text_margin_left"
+                        android:text="@string/reserve_pay_with_ticket"
+                        style="@style/middle_text_style"
+                        android:gravity="center_vertical"/>
+                    <TextView
+                        android:id="@+id/reserve_pay_with_ticket_text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        style="@style/middle_text_style"
+                        android:text="@string/reserve_no_ticket"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:gravity="center_vertical|right"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/reserve_car_info_item_height"
+                        android:src="@mipmap/arraw_right" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/reserve_car_info_item_height"
+                        android:layout_marginTop="@dimen/reserve_layout_margin_top"
+                        android:background="@drawable/common_top_bottom_line_bg"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/maintain_common_text_margin_left"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="@string/reserve_pay_via"
+                            android:textColor="@color/orange"
+                            android:textSize="@dimen/normal_font_size" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/reserve_car_info_item_height"
+                            android:gravity="center|left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/maintain_reserve_online_notice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@mipmap/pay_refund"
+                                android:drawablePadding="2dp"
+                                android:text="@string/reserve_pay_notice1"
+                                android:textColor="@color/text_hint"
+                                android:textSize="@dimen/small_font_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@mipmap/pay_retime"
+                                android:drawablePadding="2dp"
+                                android:text="@string/reserve_pay_notice2"
+                                android:textColor="@color/text_hint"
+                                android:textSize="@dimen/small_font_size" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/reserve_choice_wechat_pay_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/reserve_pay_item_height"
+                            android:layout_marginLeft="@dimen/reserve_pay_item_margin_left"
+                            android:background="@drawable/common_bottom_line_layout"
+                            android:clickable="true"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/reserve_wechat_box"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/reserve_pay_check_margin_right"
+                                android:button="@drawable/reserve_pay_box"
+                                android:checked="true"
+                                android:clickable="false" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:drawableLeft="@mipmap/icon_wechat"
+                                android:drawablePadding="@dimen/reserve_layout_margin_top"
+                                android:gravity="center_vertical"
+                                android:text="@string/pay_via_wechat"
+                                android:textColor="@color/text_hint"
+                                android:textSize="@dimen/normal_font_size" />
+
+                            <TextView
+                                android:id="@+id/reserve_wechat_discount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/orange"
+                                android:textSize="@dimen/small_font_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/reserve_choice_alipay_pay_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/reserve_pay_item_height"
+                            android:layout_marginLeft="@dimen/reserve_pay_item_margin_left"
+                            android:background="@drawable/common_bottom_line_layout"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <CheckBox
+                                android:id="@+id/reserve_alipay_box"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/reserve_pay_check_margin_right"
+                                android:button="@drawable/reserve_pay_box" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:drawableLeft="@mipmap/icon_alipay"
+                                android:drawablePadding="@dimen/reserve_layout_margin_top"
+                                android:gravity="center_vertical"
+                                android:text="@string/pay_via_alipay"
+                                android:textColor="@color/text_hint"
+                                android:textSize="@dimen/normal_font_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/reserve_choice_shop_pay_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/reserve_pay_item_height"
+                            android:layout_marginLeft="@dimen/reserve_pay_item_margin_left"
+                            android:background="@color/white"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/reserve_shop_box"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/reserve_pay_check_margin_right"
+                                android:button="@drawable/reserve_pay_box"
+                                android:clickable="false" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:drawableLeft="@mipmap/icon_card"
+                                android:drawablePadding="@dimen/reserve_layout_margin_top"
+                                android:gravity="center_vertical"
+                                android:text="@string/pay_via_shop"
+                                android:textColor="@color/text_hint"
+                                android:textSize="@dimen/normal_font_size" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reserve_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@drawable/common_top_bottom_line_bg"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/reserve_total_price_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="908"
+                android:textColor="@color/orange"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:gravity="bottom"
+                android:text="@string/maintain_money_unit"
+                android:textColor="@color/orange" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/maintain_reserve_button"
+            style="@style/commonButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/maintain_combo_i_want_order" />
+    </LinearLayout>
+
+</LinearLayout>
+
+

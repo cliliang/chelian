@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tribe_popup_item_height">50dp</dimen>
+    <dimen name="tribe_gallery_item_between">10dp</dimen>
+</resources>

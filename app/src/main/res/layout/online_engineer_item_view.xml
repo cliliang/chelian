@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:utils="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/online_engineer_item_width"
+        android:layout_height="@dimen/online_list_view_height"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <com.ceyu.carsteward.common.ui.views.CircleHeadImageView
+            android:id="@+id/online_engineer_head_id"
+            android:layout_width="@dimen/online_engineer_border"
+            android:layout_height="@dimen/online_engineer_border"
+            android:layout_marginLeft="@dimen/user_head_margin_bottom"
+            android:layout_marginRight="@dimen/user_head_margin_bottom"
+            android:layout_marginTop="@dimen/engineer_top_view_margin_top"
+            utils:border_color="@color/line_color"
+            utils:border_width="1px" />
+
+        <TextView
+            android:id="@+id/online_engineer_name_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/text_hint"
+            android:textSize="@dimen/middle_font_size"/>
+
+        <TextView
+            android:id="@+id/online_engineer_model_id"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textSize="@dimen/small_font_size"
+            android:textColor="@color/normal_text_color"/>
+    </LinearLayout>
+</LinearLayout>

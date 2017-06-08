@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:background="@drawable/common_bottom_line_layout"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/tuan_content_view_margin_left"
+                android:paddingRight="@dimen/tuan_content_view_margin_left">
+
+                <TextView
+                    android:id="@+id/tuan_reserve_shop_name"
+                    style="@style/normal_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tuan_reserve_shop_address_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:textColor="@color/text_hint"
+                    android:textSize="@dimen/small_font_size" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="@dimen/tuan_content_view_margin_top"
+                android:background="@drawable/common_top_bottom_line_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/tuan_content_view_margin_left"
+                android:text="@string/tuan_describe_content"
+                android:visibility="gone"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/normal_font_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tuan_content_view_margin_top"
+                android:background="@drawable/common_top_bottom_line_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="@dimen/tuan_content_view_margin_left"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/common_bottom_line_layout"
+                    android:gravity="center_vertical"
+                    android:text="@string/tuan_content_describe_content"
+                    android:textColor="@color/normal_text_color"
+                    android:textSize="@dimen/normal_font_size" />
+
+                <TextView
+                    android:id="@+id/tuan_reserve_content_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="@dimen/tuan_content_view_margin_left"
+                    android:paddingRight="@dimen/tuan_content_view_margin_left"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/text_hint"
+                    android:textSize="@dimen/middle_font_size" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tuan_reserve_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/tuan_content_view_margin_top"
+                android:background="@drawable/common_top_bottom_line_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/tuan_content_view_margin_left"
+                android:textColor="@color/normal_text_color"
+                android:textSize="@dimen/normal_font_size" />
+
+            <LinearLayout
+                android:id="@+id/tuan_reserve_achieve_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tuan_reserve_item_height"
+                android:clickable="true"
+                android:layout_marginTop="@dimen/tuan_content_view_margin_top"
+                android:background="@drawable/common_top_bottom_line_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/tuan_content_view_margin_left">
+
+                <TextView
+                    style="@style/middle_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/tuan_reserve_arrive_shop_time" />
+
+                <TextView
+                    android:id="@+id/tuan_reserve_achive_shop_time"
+                    style="@style/middle_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/tuan_reserve_view_margin_left"
+                    android:gravity="center_vertical" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="29dp"
+                    android:src="@mipmap/arraw_right"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tuan_reserve_add_car_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tuan_reserve_item_height"
+                android:clickable="true"
+                android:background="@drawable/common_bottom_line_layout"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/tuan_content_view_margin_left">
+
+                <TextView
+                    style="@style/middle_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/tuan_reserve_add_car" />
+
+                <TextView
+                    android:id="@+id/tuan_reserve_car_info"
+                    style="@style/middle_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/tuan_reserve_view_margin_left"
+                    android:gravity="center_vertical" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="29dp"
+                    android:src="@mipmap/arraw_right"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tuan_reserve_item_height"
+                android:background="@drawable/common_bottom_line_layout"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/middle_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/tuan_content_view_margin_left"
+                    android:gravity="center_vertical"
+                    android:text="@string/tuan_reserve_arrive_shop_car" />
+
+                <TextView
+                    android:id="@+id/reserve_input_license_number"
+                    style="@style/middle_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/tuan_reserve_view_margin_left"
+                    android:textColorHint="@color/text_hint" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tuan_reserve_item_height"
+                android:background="@drawable/common_bottom_line_layout"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/tuan_content_view_margin_left">
+
+                <TextView
+                    style="@style/middle_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/reserve_maintain_use_name" />
+
+                <EditText
+                    android:id="@+id/tuan_reserve_input_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="@string/please_input_you_name"
+                    android:layout_marginLeft="@dimen/tuan_reserve_view_margin_left"
+                    android:textColor="@color/normal_text_color"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/middle_font_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tuan_reserve_item_height"
+                android:background="@drawable/common_bottom_line_layout"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/tuan_content_view_margin_left">
+
+                <TextView
+                    style="@style/middle_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/reserve_maintain_use_phone" />
+
+                <EditText
+                    android:id="@+id/tuan_reserve_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="@string/reserve_maintain_input_phone_hint"
+                    android:layout_marginLeft="@dimen/tuan_reserve_view_margin_left"
+                    android:textColor="@color/normal_text_color"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/middle_font_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tuan_reserve_item_height"
+                android:layout_marginTop="@dimen/tuan_content_view_margin_top"
+                android:background="@drawable/common_top_bottom_line_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/tuan_content_view_margin_left"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/reserve_pay_via"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/middle_font_size" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/reserve_car_info_item_height"
+                    android:gravity="center|left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/pay_refund"
+                        android:drawablePadding="2dp"
+                        android:text="@string/reserve_pay_notice1"
+                        android:textColor="@color/text_hint"
+                        android:textSize="@dimen/small_font_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/pay_retime"
+                        android:drawablePadding="2dp"
+                        android:text="@string/reserve_pay_notice2"
+                        android:textColor="@color/text_hint"
+                        android:textSize="@dimen/small_font_size" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/tuan_reserve_choice_wechat_pay_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reserve_pay_item_height"
+                    android:layout_marginLeft="@dimen/tuan_content_view_margin_left"
+                    android:background="@drawable/common_bottom_line_layout"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/tuan_reserve_wechat_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/reserve_pay_check_margin_right"
+                        android:button="@drawable/reserve_pay_box"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@mipmap/icon_wechat"
+                        android:drawablePadding="@dimen/reserve_layout_margin_top"
+                        android:gravity="center_vertical"
+                        android:text="@string/pay_via_wechat"
+                        android:textColor="@color/text_hint"
+                        android:textSize="@dimen/middle_font_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tuan_reserve_choice_alipay_pay_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reserve_pay_item_height"
+                    android:layout_marginLeft="@dimen/tuan_content_view_margin_left"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    android:background="@drawable/common_bottom_line_layout"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/tuan_reserve_alipay_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/reserve_pay_check_margin_right"
+                        android:clickable="false"
+                        android:button="@drawable/reserve_pay_box" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@mipmap/icon_alipay"
+                        android:drawablePadding="@dimen/reserve_layout_margin_top"
+                        android:gravity="center_vertical"
+                        android:text="@string/pay_via_alipay"
+                        android:textColor="@color/text_hint"
+                        android:textSize="@dimen/middle_font_size" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/maintain_shop_order_layout_height"
+        android:layout_gravity="bottom"
+        android:background="@drawable/common_top_line_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/maintain_discount_margin_left"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/small_font_size" />
+
+        <TextView
+            android:id="@+id/tuan_reserve_pay_money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/maintain_list_content_margin_right"
+            android:gravity="bottom"
+            android:textColor="@color/orange"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/maintain_list_content_unit_margin_bottom"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:gravity="bottom"
+            android:text="@string/maintain_money_unit"
+            android:textColor="@color/orange"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tuan_reserve_pay_button"
+            style="@style/commonButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/maintain_combo_i_want_order" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/maintain_list_shop_container"
+    android:visibility="visible"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/maintain_shop_title_height"
+        android:background="@drawable/common_bottom_line_layout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:textColor="@color/text_hint"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/middle_font_size"
+            android:text="@string/maintain_shop_count_hint"/>
+        <TextView
+            android:id="@+id/maintain_list_shop_count"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/middle_font_size"
+            android:textColor="@color/normal_text_color" />
+
+        <TextView
+            android:id="@+id/maintain_list_sort_by_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:paddingLeft="@dimen/maintain_sort_padding"
+            android:paddingRight="@dimen/maintain_sort_padding"
+            android:textSize="@dimen/middle_font_size"
+            android:textColor="@color/text_hint"
+            android:text="@string/sort_shop_by_distance" />
+        <TextView
+            android:id="@+id/maintain_list_sort_by_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:paddingLeft="@dimen/maintain_sort_padding"
+            android:paddingRight="@dimen/maintain_sort_padding"
+            android:textSize="@dimen/middle_font_size"
+            android:textColor="@color/orange"
+            android:text="@string/sort_shop_by_price"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/maintain_shop_list_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/text_hint"
+            android:textSize="@dimen/middle_font_size"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/reserve_shop_list_empty"/>
+        <ListView
+            android:id="@+id/maintain_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparency"
+            android:listSelector="@color/transparency"
+            android:divider="@null"/>
+    </FrameLayout>
+
+</LinearLayout>

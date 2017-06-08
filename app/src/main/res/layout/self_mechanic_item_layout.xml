@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_block_view_margin_top"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.ceyu.carsteward.common.ui.views.RoundCornerImageView
+                android:id="@+id/self_mechanic_image"
+                android:layout_width="80dp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/self_mechanic_name"
+                    style="@style/normal_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="name" />
+
+                <TextView
+                    android:id="@+id/self_mechanic_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/self_mechanic_look"
+                    android:textColor="@color/text_hint"
+                    android:textSize="@dimen/middle_font_size" />
+
+                <TextView
+                    android:id="@+id/self_mechanic_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/self_mechanic_year"
+                    android:textColor="@color/text_hint"
+                    android:textSize="@dimen/middle_font_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/self_mechanic_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:text="@string/self_mechanic_view_comment"
+                        android:focusable="false"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/middle_font_size" />
+
+                    <TextView
+                        android:id="@+id/self_mechanic_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:clickable="true"
+                        android:text="@string/self_mechanic_view_pic"
+                        android:focusable="false"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/middle_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/self_mechanic_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/self_mechanic_time"
+                    android:textColor="@color/text_hint"
+                    android:textSize="@dimen/middle_font_size"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/self_mechanic_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/self_normal"/>
+
+</FrameLayout>

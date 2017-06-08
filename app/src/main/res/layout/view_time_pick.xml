@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_share_dialog_cancel"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/view_time_picker_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/choice_receive_shop_time"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#a7a7a7"/>
+
+        <LinearLayout
+            android:id="@+id/timePicker1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <com.ceyu.carsteward.common.ui.views.timepick.WheelView
+                android:id="@+id/wv_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.ceyu.carsteward.common.ui.views.timepick.WheelView
+                android:id="@+id/wv_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.ceyu.carsteward.common.ui.views.timepick.WheelView
+                android:id="@+id/wv_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.ceyu.carsteward.common.ui.views.timepick.WheelView
+                android:id="@+id/wv_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.ceyu.carsteward.common.ui.views.timepick.WheelView
+                android:id="@+id/wv_minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_timepic_sure"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_share_renzheng"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</RelativeLayout>

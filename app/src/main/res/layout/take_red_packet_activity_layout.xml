@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/take_red_main_scroll"
+    android:visibility="invisible"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/take_red_packet_top_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="230dp"
+                android:paddingLeft="@dimen/take_packet_content_padding_left_right"
+                android:paddingRight="@dimen/take_packet_content_padding_left_right">
+
+                <TextView
+                    android:id="@+id/home_packet_my_packet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="right"
+                    android:paddingBottom="@dimen/take_packet_content_text_padding"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:text="@string/show_my_red_packet"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/middle_font_size" />
+
+                <Button
+                    android:id="@+id/take_red_packet_button_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/take_packet_button_bg"
+                    android:text="@string/week_red_packet_have_take"
+                    android:textColor="@drawable/take_red_packet_text_selector"
+                    android:textSize="@dimen/normal_font_size" />
+
+                <TextView
+                    android:id="@+id/home_packet_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="top|center_horizontal"
+                    android:paddingTop="@dimen/take_packet_content_text_padding"
+                    android:text="@string/to_send_red_packet"
+                    android:visibility="invisible"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/take_red_packet_bottom_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/redenvelopedown" />
+
+    </LinearLayout>
+</ScrollView>

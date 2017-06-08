@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_marginTop="20dp"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/record_goodness"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/large_font_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/record_goodness_title_verticalmargin"
+        android:background="@color/grey215" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/record_goodness_content_verticalmargin"
+        android:text="@string/record_goodness1"
+        android:textColor="@color/normal_text_color"
+        android:textSize="@dimen/middle_font_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/record_goodness_content_verticalmargin"
+        android:text="@string/record_goodness2"
+        android:textColor="@color/normal_text_color"
+        android:textSize="@dimen/middle_font_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/record_goodness_content_verticalmargin"
+        android:text="@string/record_goodness3"
+        android:textColor="@color/normal_text_color"
+        android:textSize="@dimen/middle_font_size" />
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:utils="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/engineer_top_view_margin_top"
+        android:orientation="horizontal"
+        android:background="@drawable/common_top_bottom_line_bg"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <com.ceyu.carsteward.common.ui.views.CircleHeadImageView
+            android:id="@+id/engineer_common_of_my_head"
+            android:layout_width="@dimen/engineer_pay_head_view_width"
+            android:layout_height="@dimen/engineer_pay_head_view_width"
+            utils:border_color="@color/line_color"
+            utils:border_width="1px" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/engineer_common_of_my_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/normal_text_color"
+                    android:textSize="@dimen/large_font_size" />
+
+                <TextView
+                    android:id="@+id/engineer_common_of_my_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/engineer_arrow_margin_left"
+                    android:textColor="@color/text_hint"
+                    android:textSize="@dimen/normal_font_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/engineer_top_view_margin_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/engineer_like_brand" />
+
+                <TextView
+                    android:id="@+id/engineer_common_of_my_brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/engineer_arrow_margin_left"
+                    android:textColor="@color/text_hint"
+                    android:textSize="@dimen/normal_font_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/engineer_top_view_margin_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/normal_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/engineer_do_comment" />
+
+                <RatingBar
+                    android:id="@+id/user_input_raking_star"
+                    android:progressDrawable="@drawable/common_raking_bar_styoe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:numStars="5"
+                    android:stepSize="1" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_top_bottom_line_bg"
+        android:layout_marginTop="@dimen/engineer_top_view_margin_top"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/user_input_comment_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:minHeight="@dimen/user_about_bang_logo_width"
+            android:hint="@string/engineer_input_comment_hint"
+            android:padding="@dimen/online_center_text_margin_top"
+            android:gravity="top|left"
+            android:background="@drawable/engineer_comment_gray_bg"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/engineer_commit_comment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_button_height"
+        android:background="@drawable/take_red_packet_button_bg"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="50dp"
+        android:text="@string/commit_user_comment"
+        android:textSize="@dimen/normal_font_size"
+        android:textColor="@drawable/take_red_packet_text_selector"/>
+
+</LinearLayout>

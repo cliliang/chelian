@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="true">
+        <layer-list>
+            <item android:bottom="0px" android:left="@dimen/line_width_padding" android:top="@dimen/line_width_padding" android:right="0dp">
+                <shape>
+                    <solid android:color="@color/orange_dark" />
+                    <corners android:bottomRightRadius="@dimen/radio_border"/>
+                    <stroke android:width="@dimen/line_width" android:color="@color/orange" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:bottom="0px" android:left="@dimen/line_width_padding" android:top="@dimen/line_width_padding" android:right="0dp" >
+                <shape>
+                    <solid android:color="@color/orange_dark" />
+                    <corners android:bottomRightRadius="@dimen/radio_border"/>
+                    <stroke android:width="@dimen/line_width" android:color="@color/orange" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_enabled="false">
+        <layer-list>
+            <item android:bottom="0px" android:left="@dimen/line_width_padding" android:top="@dimen/line_width_padding" android:right="0dp" >
+                <shape>
+                    <solid android:color="@color/white" />
+                    <corners android:bottomRightRadius="@dimen/radio_border"/>
+                    <stroke android:width="@dimen/line_width" android:color="@color/orange" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:bottom="0px" android:left="@dimen/line_width_padding" android:top="@dimen/line_width_padding" android:right="0dp" >
+                <shape>
+                    <solid android:color="@color/white" />
+                    <corners android:bottomRightRadius="@dimen/radio_border"/>
+                    <stroke android:width="@dimen/line_width" android:color="@color/orange" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/user_about_bang_logo_width"
+        android:layout_height="@dimen/user_about_bang_logo_width"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/user_about_bang_logo_margin_top"
+        android:layout_marginBottom="@dimen/user_about_bang_logo_margin_top"
+        android:src="@mipmap/icon_logo"/>
+    
+    <com.ceyu.carsteward.common.views.IconTextView
+        android:id="@+id/about_bang_suggest"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_icon_text_view_height"
+        tools:iconRes="@mipmap/aboutus2"
+        tools:textRes="@string/bang_suggest_and_back"/>
+    <com.ceyu.carsteward.common.views.IconTextView
+        android:id="@+id/about_bang_connect"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_icon_text_view_height"
+        tools:iconRes="@mipmap/aboutus3"
+        tools:textRes="@string/bang_connect_us"/>
+    <com.ceyu.carsteward.common.views.IconTextView
+        android:id="@+id/about_bang_service"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_icon_text_view_height"
+        tools:iconRes="@mipmap/aboutus4"
+        tools:textRes="@string/bang_service_list"/>
+</LinearLayout>

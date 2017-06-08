@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tribe_detail_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/tribe_comment_send_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/common_top_bottom_line_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/tribe_detail_reply_txt"
+            style="@style/middle_text_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/tribe_orage_round_layout"
+            android:hint="@string/tribe_reply_default_hint"
+            android:textColorHint="@color/text_hint"
+            android:minHeight="35dp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/tribe_detail_reply_button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/take_red_packet_button_bg"
+            android:text="@string/tribe_comment_send"
+            android:textColor="@drawable/take_red_packet_text_selector"
+            android:textSize="@dimen/normal_font_size" />
+
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/tribe_detail_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tribe_comment_send_layout"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:smoothScrollbar="true" />
+</RelativeLayout>

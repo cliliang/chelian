@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="check_my_red_packet">领取红包</string>
+    <string name="check_break_rules">违章查询</string>
+    <string name="take_red_packet_weekly">每周领</string>
+    <string name="user_my_packet">我的红包</string>
+    <string name="user_now_red_packet_total_money">您目前可用红包金额：￥%1$.0f</string>
+    <string name="user_red_packet_use_rule">不可提现，可多张叠加使用</string>
+    <string name="user_red_packet_use_date">有效期：%1$s</string>
+    <string name="red_packet_use_rules">红包使用规则：</string>
+    <string name="show_red_packed_use_rules">只用于拨打电话抵扣费用，暂不支持提现功能；\n请在有效期内使用完毕；\n为整张一次性消费，不设找零环节，请妥善使用。</string>
+    <string name="show_my_red_packet">查看红包</string>
+    <string name="to_send_red_packet">去派发红包</string>
+    <string name="week_red_packet_have_take">红包已领取!</string>
+    <string name="have_take_red_packet">已经领取%1$.0f元红包!</string>
+    <string name="red_packet_action_exchange">兑换</string>
+    <string name="please_input_exchange_code">请输入兑换码</string>
+    <string name="please_exchange_success">兑换成功</string>
+    <string name="please_input_exchange_not_empty">请输入您的兑换码</string>
+    <string name="red_packet_rule_describe">技师券：\n1.用于抵扣拨打技师电话费用；\n2.该券设有有效期2周，请在有效期内使用；\n3.为整张一次性消费，不设找零环节，请妥善使用。
+        \n\n保养券：\n1.用于抵扣在线支付保养服务费用；\n2.该券设有有效期1个月，请在有效期内使用；\n3.为整张一次性消费，不设找零环节，请妥善使用；\n4.该券不可与店内其他优惠活动同时使用。
+        \n\n活动最终解释权归帮帮养车所有</string>
+</resources>

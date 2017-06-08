@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="@dimen/weather_logo_width"
+        android:layout_height="@dimen/weather_logo_height"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/main_title_logo" />
+
+    <!-- 限行 -->
+    <TextView
+        android:id="@+id/tv_weather_facade_view_layout_carlimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/weather_limiet_to_logo_margin"
+        android:textColor="@color/text_hint"
+        android:textSize="@dimen/middle_font_size" />
+
+    <!-- 天气详情 -->
+    <TextView
+        android:id="@+id/tv_weather_facade_view_layout_weatherdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/weather_weather_to_limit_margin"
+        android:text="@string/default_tem"
+        android:textColor="@color/text_hint"
+        android:textSize="@dimen/middle_font_size" />
+
+    <!-- 地区 -->
+    <FrameLayout
+        android:id="@+id/tv_weather_facade_view_layout_locationparent"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_weather_facade_view_layout_location"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/weather_location_icon_height"
+            android:layout_gravity="right|center_vertical"
+            android:drawableLeft="@mipmap/main_title_location_icon"
+            android:drawablePadding="@dimen/weather_location_to_icon_margin"
+            android:gravity="bottom"
+            android:text="@string/default_city"
+            android:textColor="@color/text_hint"
+            android:textSize="@dimen/middle_font_size" />
+    </FrameLayout>
+
+
+</LinearLayout>

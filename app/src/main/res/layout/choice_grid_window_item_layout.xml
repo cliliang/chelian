@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <TextView
+        android:id="@+id/grid_view_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/normal_text_style"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/start_red_margin_left"
+        android:layout_marginBottom="@dimen/start_red_margin_left"/>
+
+</LinearLayout>

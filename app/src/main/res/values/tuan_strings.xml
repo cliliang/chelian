@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tuan_facade_title">帮帮团购</string>
+    <string name="tuan_facade_market_money">￥%1$s</string>
+    <string name="tuan_facade_num_of_people">%1$d人购买</string>
+    <string name="tuan_facade_all_tuan">查看全部团购</string>
+    <string name="tuan_main_list_by_money">按价格</string>
+    <string name="tuan_main_list_by_month">按销量</string>
+    <string name="tuan_describe_content">团购活动介绍</string>
+    <string name="tuan_content_end_time">服务截止日期：%1$s</string>
+    <string name="tuan_content_describe_content">包含项目：</string>
+    <string name="tuan_use_need_know">用户须知：</string>
+    <string name="tuan_reserve_title">预订详情</string>
+    <string name="tuan_reserve_arrive_shop_time">到店时间：</string>
+    <string name="tuan_reserve_add_car">添加车辆：</string>
+    <string name="tuan_order_car_info">车辆信息：</string>
+    <string name="tuan_reserve_arrive_shop_car">到店车辆：</string>
+    <string name="tuan_order_car_license">车牌号码：</string>
+    <string name="tuan_order_title">订单详情</string>
+    <string name="tuan_order_please_add_car">请先选择车辆</string>
+    <string name="tuan_order_please_input_name">请填写联系人</string>
+    <string name="tuan_order_please_input_phone">请填写联系电话</string>
+    <string name="tuan_order_list_type">团购</string>
+    <string name="tuan_order_change_time">修改</string>
+</resources>

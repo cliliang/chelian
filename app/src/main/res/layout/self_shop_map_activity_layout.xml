@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/self_shop_map_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_block_view_margin_top"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/self_map_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No1"
+                android:textColor="@color/normal_text_color"
+                android:textSize="@dimen/normal_font_size"/>
+            <TextView
+                android:id="@+id/self_map_shop_short"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/self_recommend_shop"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/normal_text_color"
+                android:textSize="@dimen/middle_font_size"/>
+            <TextView
+                android:id="@+id/self_map_shop_distance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="distance"
+                android:textColor="@color/normal_text_color"
+                android:textSize="@dimen/middle_font_size"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/self_map_shop_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_hint"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/middle_font_size"
+            android:text="address"
+            android:layout_marginBottom="10dp"/>
+
+        <include layout="@layout/common_horizontal_line"/>
+
+        <TextView
+            android:id="@+id/self_map_next_step"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:text="@string/self_next_step"
+            android:clickable="true"
+            android:textColor="@drawable/take_red_packet_text_selector"
+            android:background="@drawable/take_red_packet_button_bg"
+            android:layout_gravity="right"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

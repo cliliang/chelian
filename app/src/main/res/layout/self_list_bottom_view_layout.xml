@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/manual_item_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="9dp"
+            android:visibility="invisible"
+            android:src="@mipmap/box_normal" />
+
+        <TextView
+            android:id="@+id/manual_item_title_view"
+            style="@style/middle_text_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical|left"
+            android:singleLine="true"
+            android:text="@string/self_manual_money" />
+
+        <TextView
+            android:id="@+id/self_manual_item_money_view"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/normal_text_color"
+            android:gravity="left|center_vertical" />
+
+        <RelativeLayout
+            android:id="@+id/manual_more_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:visibility="invisible"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:id="@+id/manual_item_more_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/arraw_d_gray" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/maintain_item_max_height"
+        android:layout_marginTop="@dimen/maintain_view_margin_top"
+        android:background="@drawable/common_bottom_line_layout"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/maintain_max_item_margin_left"
+        android:text="@string/maintain_text_notify"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/normal_font_size" />
+
+    <TextView
+        android:id="@+id/self_combo_notice_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_bottom_line_layout"
+        android:lineSpacingMultiplier="1.5"
+        android:paddingBottom="@dimen/maintain_view_margin_top"
+        android:paddingLeft="@dimen/maintain_sub_item_margin_left"
+        android:paddingRight="@dimen/maintain_sub_item_margin_left"
+        android:paddingTop="@dimen/maintain_view_margin_top"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/middle_font_size" />
+
+    <LinearLayout
+        android:id="@+id/self_combo_free_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maintain_view_margin_top"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/maintain_item_max_height"
+            android:background="@drawable/common_bottom_line_layout"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/maintain_max_item_margin_left"
+                android:gravity="center_vertical"
+                android:text="@string/maintain_combo_free_item"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/normal_font_size" />
+
+            <TextView
+                android:id="@+id/self_combo_free_count"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/normal_font_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/maintain_arrow_margin_right"
+                android:src="@mipmap/arraw_d"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/self_combo_free_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_bottom_line_layout"
+            android:lineSpacingMultiplier="1.5"
+            android:paddingBottom="@dimen/maintain_view_margin_top"
+            android:paddingLeft="@dimen/maintain_sub_item_margin_left"
+            android:paddingRight="@dimen/maintain_sub_item_margin_left"
+            android:paddingTop="@dimen/maintain_view_margin_top"
+            android:textColor="@color/text_hint"
+            android:textSize="@dimen/middle_font_size" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/maintain_item_max_height"
+        android:layout_marginTop="@dimen/maintain_view_margin_top"
+        android:background="@drawable/common_bottom_line_layout"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/maintain_max_item_margin_left"
+        android:text="@string/maintain_combo_must_know"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/normal_font_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_bottom_line_layout"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/maintain_list_name_margin_top"
+        android:paddingTop="@dimen/maintain_list_name_margin_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/maintain_sub_item_margin_left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/maintain_combo_start_end"
+                android:textColor="@color/normal_text_color"
+                android:textSize="@dimen/middle_font_size" />
+
+            <TextView
+                android:id="@+id/self_combo_use_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_hint"
+                android:textSize="@dimen/middle_font_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/maintain_sub_item_margin_left"
+            android:layout_marginTop="@dimen/maintain_view_margin_top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/maintain_combo_subscribe_info"
+                android:textColor="@color/normal_text_color"
+                android:textSize="@dimen/middle_font_size" />
+
+            <TextView
+                android:id="@+id/self_combo_make_order_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_hint"
+                android:textSize="@dimen/middle_font_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/maintain_sub_item_margin_left"
+            android:layout_marginTop="@dimen/maintain_view_margin_top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/maintain_combo_order_notify"
+                android:textColor="@color/normal_text_color"
+                android:textSize="@dimen/middle_font_size" />
+
+            <TextView
+                android:id="@+id/self_combo_rule_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_hint"
+                android:textSize="@dimen/middle_font_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/self_combo_debit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/maintain_sub_item_margin_left"
+            android:layout_marginTop="@dimen/maintain_view_margin_top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/maintain_combo_bill_info"
+                android:textColor="@color/normal_text_color"
+                android:textSize="@dimen/middle_font_size" />
+
+            <TextView
+                android:id="@+id/self_combo_debit_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_hint"
+                android:textSize="@dimen/middle_font_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

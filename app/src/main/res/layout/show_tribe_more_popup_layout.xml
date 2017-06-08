@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp"
+    android:layout_height="wrap_content"
+    android:background="#E0000000"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tribe_popup_edit"
+        style="@style/tribeWindow"
+        android:layout_marginTop="10dp"
+        android:text="@string/tribe_my_edit" />
+
+    <TextView
+        android:id="@+id/tribe_popup_comment"
+        style="@style/tribeWindow"
+        android:text="@string/tribe_my_comment" />
+
+    <RelativeLayout
+        android:id="@+id/tribe_popup_message_layout"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_height="@dimen/tribe_popup_item_height"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/tribe_popup_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/tribe_my_message"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_font_size" />
+        <TextView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_toRightOf="@id/tribe_popup_message"
+            android:layout_above="@id/tribe_popup_message"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/tribe_message_dot_bg"
+            android:textSize="10sp"
+            android:text="11"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

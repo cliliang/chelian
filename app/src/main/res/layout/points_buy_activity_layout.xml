@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_bottom_line_layout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/common_bottom_line_layout"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/middle_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/point_good_name" />
+
+                <TextView
+                    android:id="@+id/points_good_name_view"
+                    style="@style/middle_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/middle_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/point_good_need" />
+
+                <TextView
+                    android:id="@+id/points_good_points_view"
+                    style="@style/middle_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/common_block_view_margin_top"
+            android:background="@drawable/common_bottom_line_layout"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/middle_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/point_user_name" />
+
+            <EditText
+                android:id="@+id/points_user_name_view"
+                style="@style/middle_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/point_user_name_hint" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/common_block_view_margin_top"
+            android:background="@drawable/common_bottom_line_layout"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/middle_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/point_user_phone" />
+
+            <EditText
+                android:id="@+id/points_user_phone_view"
+                style="@style/middle_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/point_user_phone_hint" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/common_block_view_margin_top"
+            android:visibility="gone"
+            android:background="@drawable/common_bottom_line_layout"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/middle_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/point_user_youbian" />
+
+            <EditText
+                android:id="@+id/points_user_youbian_view"
+                style="@style/middle_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/point_user_youbian_hint" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/common_block_view_margin_top"
+            android:background="@drawable/common_bottom_line_layout"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/middle_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/point_user_address" />
+
+            <EditText
+                android:id="@+id/points_user_address_view"
+                style="@style/middle_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/point_user_address_hint" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="@string/point_after_submit_info"
+            android:textColor="@color/text_hint"
+            android:textSize="@dimen/small_font_size" />
+
+        <TextView
+            android:id="@+id/points_submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/take_red_packet_button_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/point_sure_submit"
+            android:enabled="false"
+            android:textColor="@drawable/take_red_packet_text_selector"
+            android:textSize="@dimen/normal_font_size" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:utils="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/engineer_item_hide_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/engineer_of_other_brand"
+        android:visibility="gone"
+        android:textColor="@color/text_hint"
+        android:clickable="true"
+        android:layout_marginTop="@dimen/engineer_list_margin_top_bottom"
+        android:textSize="@dimen/middle_font_size"
+        android:paddingBottom="@dimen/engineer_other_brand_margin_top_bottom"
+        android:paddingTop="@dimen/engineer_other_brand_margin_top_bottom"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/common_top_bottom_line_bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/engineer_list_item_height"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/engineer_list_margin_top_bottom"
+        android:background="@drawable/common_top_bottom_line_bg"
+        android:gravity="center_vertical">
+
+        <com.ceyu.carsteward.common.ui.views.CircleHeadImageView
+            android:id="@+id/engineer_item_head_id"
+            android:layout_width="@dimen/engineer_list_head_width"
+            android:layout_height="@dimen/engineer_list_head_width"
+            utils:border_width="1px"
+            utils:border_color="@color/line_color"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom">
+
+                <TextView
+                    android:id="@+id/engineer_item_name_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/normal_font_size"
+                    android:textColor="@color/normal_text_color"/>
+
+                <TextView
+                    android:id="@+id/engineer_item_local_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:background="@drawable/orange_color_bg"
+                    android:layout_marginLeft="@dimen/engineer_level_margin_left"
+                    android:textSize="@dimen/small_font_size"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/engineer_list_item_beyond"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/engineer_function"
+                    style="@style/middle_text_style"/>
+
+                <TextView
+                    android:id="@+id/engineer_item_function_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_marginLeft="@dimen/engineer_level_margin_left"
+                    android:textColor="@color/text_hint"
+                    android:textSize="@dimen/middle_font_size"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/engineer_list_item_beyond"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/middle_text_style"
+                    android:text="@string/engineer_service_brand_name"/>
+                <TextView
+                    android:id="@+id/engineer_item_brand_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_hint"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_marginLeft="@dimen/engineer_level_margin_left"
+                    android:textSize="@dimen/middle_font_size"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/engineer_list_item_beyond"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/engineer_take_order"
+                    style="@style/middle_text_style"/>
+
+                <TextView
+                    android:id="@+id/engineer_item_order_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_marginLeft="@dimen/engineer_level_margin_left"
+                    android:textColor="@color/text_hint"
+                    android:textSize="@dimen/middle_font_size"/>
+
+            </LinearLayout>
+            
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/engineer_item_money_id"
+            android:layout_width="@dimen/engineer_list_money_width"
+            android:layout_height="@dimen/engineer_list_money_width"
+            android:gravity="center"
+            android:textSize="@dimen/engineer_money_text_size"
+            android:textColor="@color/orange"
+            android:background="@drawable/engineer_money_bg"/>
+
+    </LinearLayout>
+
+</LinearLayout>

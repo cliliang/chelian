@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tuan_facade_item1_height">85dp</dimen>
+    <dimen name="tuan_content_view_margin_left">19dp</dimen>
+    <dimen name="tuan_content_view_margin_top">2dp</dimen>
+    <dimen name="tuan_reserve_item_height">40dp</dimen>
+    <dimen name="tuan_reserve_view_margin_left">24dp</dimen>
+    <dimen name="tuan_order_item_height">57dp</dimen>
+    <dimen name="tuan_facade_title_margin_top_bottom">7dp</dimen>
+</resources>

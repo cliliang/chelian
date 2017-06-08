@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="car_of_mine">我的爱车</string>
+    <string name="add_car_kilometre_hint">请输入公里数</string>
+    <string name="add_car_info">添加车辆</string>
+    <string name="add_car_choice_brand">选择车辆</string>
+    <string name="car_year">年款</string>
+    <string name="car_model">车型</string>
+    <string name="car_license_plate_number">车牌号</string>
+    <string name="please_input_right_plate_number">请输入正确车牌号</string>
+    <string name="input_car_license_plate_number_hint">请输入车牌号</string>
+    <string name="car_frame_number">车架号</string>
+    <string name="input_car_frame_number">请输入车架号后六位</string>
+    <string name="car_engineer_number">发动机号</string>
+    <string name="input_car_engineer_number">请输入发动机号</string>
+    <string name="insurance_company_name">投保公司</string>
+    <string name="input_insurance_company_name">请选择保险公司</string>
+    <string name="input_right_phone_number">请输入正确的手机号码</string>
+    <string name="by_insurance_date">投保时间</string>
+    <string name="input_buy_insurance_date">请选择投保时间</string>
+    <string name="by_car_date">购车时间</string>
+    <string name="by_car_date_hint">请选择购车时间</string>
+    <string name="input_car_user_name">请输入车主姓名</string>
+    <string name="car_owner_name">车主姓名</string>
+    <string name="car_kilo_number">公里数</string>
+    <string name="input_car_kilo_number">请输入当前公里数</string>
+    <string name="hind_view">收起</string>
+    <string name="show_all">展开全部</string>
+    <string name="choice_insurance_company">选择保险公司</string>
+    <string name="save_car_info_success">保存成功</string>
+    <string name="delete_car_success">车辆删除成功</string>
+    <string name="add_new_cars">添加新车型</string>
+    <string name="please_add_car_first">请先添加车辆</string>
+
+    <string-array name="province_list">
+        <item>京</item>
+        <item>津</item>
+        <item>沪</item>
+        <item>渝</item>
+        <item>冀</item>
+        <item>晋</item>
+        <item>辽</item>
+        <item>吉</item>
+        <item>黑</item>
+        <item>苏</item>
+        <item>浙</item>
+        <item>皖</item>
+        <item>闽</item>
+        <item>赣</item>
+        <item>鲁</item>
+        <item>豫</item>
+        <item>顎</item>
+        <item>湘</item>
+        <item>粤</item>
+        <item>琼</item>
+        <item>川</item>
+        <item>黔</item>
+        <item>滇</item>
+        <item>陕</item>
+        <item>甘</item>
+        <item>青</item>
+        <item>藏</item>
+        <item>桂</item>
+        <item>蒙</item>
+        <item>宁</item>
+        <item>新</item>
+        <item>台</item>
+    </string-array>
+    
+    <string-array name="letter_list">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </string-array>
+</resources>

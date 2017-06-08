@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/bang_suggest_titletotop">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_feedback_orange"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bang_suggest_titletolefticon"
+            android:text="@string/bang_suggest_title"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bang_suggest_asktotop"
+        android:text="@string/bang_suggest_pleasesay"/>
+    
+    <EditText
+        android:id="@+id/et_bang_suggest_editbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/bang_suggest_editbox_minheight"
+        android:background="@drawable/bg_border_greyouter_whiteinner"
+        android:layout_marginTop="@dimen/bang_suggest_editbox_totop"
+        android:hint="@string/bang_suggest_atleastfivewords"
+        android:gravity="start"/>
+
+    <TextView
+        android:id="@+id/tv_bang_suggest_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bang_suggest_submint_height"
+        android:layout_marginTop="@dimen/bang_suggest_titletotop"
+        android:gravity="center"
+        android:background="@drawable/orange_color_bg"
+        android:text="@string/bang_suggest_submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large_font_size"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bang_suggest_submint_height"
+        android:gravity="center"
+        android:text="@string/bang_suggest_contectbyphone"
+        android:textSize="@dimen/normal_font_size" />
+
+    <TextView
+        android:id="@+id/tv_bang_suggest_phonenum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bang_suggest_titletotop"
+        android:gravity="center"
+        android:text="4006-900-977"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/large_font_size" />
+
+</LinearLayout>
